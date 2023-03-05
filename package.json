@@ -1,0 +1,21 @@
+{
+  "name": "react-app",
+  "version": "1.0.0",
+  "description": "My first react app",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/beastvaibhv/react-app.git"
+  },
+  "author": "Vaibhav Bisht",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/beastvaibhv/react-app/issues"
+  },
+  "homepage": "https://github.com/beastvaibhv/react-app#readme",
+  "dependencies": {
+    "react": "^18.2.0"
+  }
+}
