@@ -1,3 +1,56 @@
-.root{
-    background-color: blanchedalmond;
+.Title{
+    display: flex;
+}
+.Restraunt{
+    width: 300px;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+    
+
+}
+.Restraunt >img{
+    width: 100%;
+    border: 1px solid blue;
+}
+
+.Header{
+    display: flex;
+    justify-content: space-between;
+   
+    padding: 5px;
+    border: 1px solid blueviolet ;
+}
+
+.logo{
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    
+}
+.Nav{
+    display: flex;
+    
+}
+.Nav > li{
+    padding: 10px;
+    list-style-type: none;
+}
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    
+    padding: 10px;
+    margin: 10px;
+}
+.footer{
+    display: flex;
+    
+}
+.footerlist{
+    display: flex;
+}
+.footerlist > li{
+    padding: 10px;
+    list-style-type: none;
 }
