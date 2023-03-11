@@ -2,2033 +2,1717 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 
 
-const Cards = [
+const restaurantList =[
   {
-    cardType: "restaurant",
-    layoutAlignmentType: "VERTICAL",
-    data: {
-      type: "restaurant",
-      data: {
-        type: "F",
-        id: "68758",
-        name: "Nath'S Chinese",
-        uuid: "dd9db611-ba85-488d-b018-16f2f92bccb7",
-        city: "22",
-        area: "Hathibarkala Salwala",
-        totalRatingsString: "10000+ ratings",
-        cloudinaryImageId: "u1rmf2otdajyddgiztam",
-        cuisines: ["North Indian", "Chinese"],
-        tags: [],
-        costForTwo: 12500,
-        costForTwoString: "₹125 FOR TWO",
-        deliveryTime: 37,
-        minDeliveryTime: 37,
-        maxDeliveryTime: 37,
-        slaString: "37 MINS",
-        lastMileTravel: 4.900000095367432,
-        slugs: {
-          restaurant: "naths-chinese-hathibarkala-salwala-hathibarkala",
-          city: "dehradun",
-        },
-        cityState: "22",
-        address: "Radha Plaza, Opp Silvercity, Rajpur Road, Dehradun",
-        locality: "Rajpur Road",
-        parentId: 13608,
-        unserviceable: false,
-        veg: false,
-        select: false,
-        favorite: false,
-        tradeCampaignHeaders: [],
-        aggregatedDiscountInfo: {
-          header: "FLAT125 off",
-          shortDescriptionList: [
-            {
-              meta: "FLAT125 off | Use FLATDEAL",
-              discountType: "Flat",
-              operationType: "RESTAURANT",
-            },
-          ],
-          descriptionList: [
-            {
-              meta: "FLAT125 off | Use FLATDEAL",
-              discountType: "Flat",
-              operationType: "RESTAURANT",
-            },
-          ],
-          subHeader: "",
-          headerType: 0,
-          superFreedel: "",
-        },
-        aggregatedDiscountInfoV2: {
-          header: "₹125 OFF",
-          shortDescriptionList: [
-            {
-              meta: "Use FLATDEAL",
-              discountType: "Flat",
-              operationType: "RESTAURANT",
-            },
-          ],
-          descriptionList: [
-            {
-              meta: "FLAT125 off | Use FLATDEAL",
-              discountType: "Flat",
-              operationType: "RESTAURANT",
-            },
-          ],
-          subHeader: "",
-          headerType: 0,
-          superFreedel: "",
-        },
-        ribbon: [
-          {
-            type: "PROMOTED",
-          },
+    "cardType": "restaurant",
+    "layoutAlignmentType": "VERTICAL",
+    "data": {
+      "type": "restaurant",
+      "data": {
+        "type": "F",
+        "id": "162634",
+        "name": "Domnik Pizza (Dharampur)",
+        "uuid": "30fe1992-8912-41c6-8c38-a813105e84d1",
+        "city": "22",
+        "area": "Dharampur",
+        "totalRatingsString": "",
+        "cloudinaryImageId": "dqvftnc1cmqdch6ccfn5",
+        "cuisines": [
+          "Pizzas",
+          "Italian"
         ],
-        chain: [],
-        feeDetails: {
-          fees: [],
-          totalFees: 0,
-          message: "",
-          title: "",
-          amount: "",
-          icon: "",
-        },
-        availability: {
-          opened: true,
-          nextOpenMessage: "",
-          nextCloseMessage: "",
-        },
-        longDistanceEnabled: 0,
-        rainMode: "NONE",
-        thirdPartyAddress: false,
-        thirdPartyVendor: "",
-        adTrackingID:
-          "cid=6083041~p=16~eid=00000186-bc07-5cc4-0087-2fff0081103f",
-        badges: {
-          imageBased: [],
-          textBased: [],
-          textExtendedBadges: [],
-        },
-        lastMileTravelString: "4.9 kms",
-        hasSurge: false,
-        sla: {
-          restaurantId: "68758",
-          deliveryTime: 37,
-          minDeliveryTime: 37,
-          maxDeliveryTime: 37,
-          lastMileTravel: 4.900000095367432,
-          lastMileDistance: 0,
-          serviceability: "SERVICEABLE",
-          rainMode: "NONE",
-          longDistance: "NOT_LONG_DISTANCE",
-          preferentialService: false,
-          iconType: "EMPTY",
-        },
-        promoted: true,
-        avgRating: "3.9",
-        totalRatings: 10000,
-        new: false,
-      },
-      subtype: "basic",
-    },
-    parentWidget: false,
-  },
-  {
-    cardType: "restaurant",
-    layoutAlignmentType: "VERTICAL",
-    data: {
-      type: "restaurant",
-      data: {
-        type: "F",
-        id: "579764",
-        name: "Speedy Chow",
-        uuid: "f307020b-1ce0-4f95-a9b5-84b167882afc",
-        city: "22",
-        area: "Paltan Bazaar",
-        totalRatingsString: "50+ ratings",
-        cloudinaryImageId: "doq1wagsvsrdiri4mobk",
-        cuisines: ["Chinese", "Asian", "Pan-Asian", "Thai", "Oriental"],
-        tags: [],
-        costForTwo: 20000,
-        costForTwoString: "₹200 FOR TWO",
-        deliveryTime: 31,
-        minDeliveryTime: 31,
-        maxDeliveryTime: 31,
-        slaString: "31 MINS",
-        lastMileTravel: 0.20000000298023224,
-        slugs: {
-          restaurant: "speedy-chow-dehradun-chukkuwala",
-          city: "dehradun",
-        },
-        cityState: "22",
-        address: "Hotel Meedo 71 Gandhi Road Dehrdaun, Dehradun Nagar Nigam",
-        locality: "Gandhi Road",
-        parentId: 2012,
-        unserviceable: false,
-        veg: false,
-        select: false,
-        favorite: false,
-        tradeCampaignHeaders: [],
-        aggregatedDiscountInfo: {
-          header: "Flat ₹100 off",
-          shortDescriptionList: [
-            {
-              meta: "Flat ₹100 off on orders above ₹499",
-              discountType: "Flat",
-              operationType: "RESTAURANT",
-            },
-          ],
-          descriptionList: [
-            {
-              meta: "Flat ₹100 off on orders above ₹499 | Use code SWIGGYHOLI",
-              discountType: "Flat",
-              operationType: "RESTAURANT",
-            },
-          ],
-          subHeader: "",
-          headerType: 0,
-          superFreedel: "",
-        },
-        aggregatedDiscountInfoV2: {
-          header: "₹100 OFF",
-          shortDescriptionList: [
-            {
-              meta: "Use SWIGGYHOLI",
-              discountType: "Flat",
-              operationType: "RESTAURANT",
-            },
-          ],
-          descriptionList: [
-            {
-              meta: "Flat ₹100 off on orders above ₹499 | Use code SWIGGYHOLI",
-              discountType: "Flat",
-              operationType: "RESTAURANT",
-            },
-          ],
-          subHeader: "",
-          headerType: 0,
-          superFreedel: "",
-        },
-        chain: [],
-        feeDetails: {
-          fees: [],
-          totalFees: 0,
-          message: "",
-          title: "",
-          amount: "",
-          icon: "",
-        },
-        availability: {
-          opened: true,
-          nextOpenMessage: "",
-          nextCloseMessage: "",
-        },
-        longDistanceEnabled: 0,
-        rainMode: "NONE",
-        thirdPartyAddress: false,
-        thirdPartyVendor: "",
-        adTrackingID: "",
-        badges: {
-          imageBased: [],
-          textBased: [],
-          textExtendedBadges: [],
-        },
-        lastMileTravelString: "0.2 kms",
-        hasSurge: false,
-        sla: {
-          restaurantId: "579764",
-          deliveryTime: 31,
-          minDeliveryTime: 31,
-          maxDeliveryTime: 31,
-          lastMileTravel: 0.20000000298023224,
-          lastMileDistance: 0,
-          serviceability: "SERVICEABLE",
-          rainMode: "NONE",
-          longDistance: "NOT_LONG_DISTANCE",
-          preferentialService: false,
-          iconType: "EMPTY",
-        },
-        promoted: false,
-        avgRating: "4.4",
-        totalRatings: 50,
-        new: false,
-      },
-      subtype: "basic",
-    },
-    parentWidget: false,
-  },
-  {
-    cardType: "restaurant",
-    layoutAlignmentType: "VERTICAL",
-    data: {
-      type: "restaurant",
-      data: {
-        type: "F",
-        id: "84229",
-        name: "Punjabi Dhaba",
-        uuid: "317a42f9-5111-400c-a254-1e2a8b677d64",
-        city: "22",
-        area: "Paltan Bazaar",
-        totalRatingsString: "10000+ ratings",
-        cloudinaryImageId: "yyrjmyajqhyjq6mp1gha",
-        cuisines: ["North Indian"],
-        tags: [],
-        costForTwo: 20000,
-        costForTwoString: "₹200 FOR TWO",
-        deliveryTime: 32,
-        minDeliveryTime: 32,
-        maxDeliveryTime: 32,
-        slaString: "32 MINS",
-        lastMileTravel: 0.6000000238418579,
-        slugs: {
-          restaurant: "punjabi-dhaba-prince-chowk-race-course-dehradun",
-          city: "dehradun",
-        },
-        cityState: "22",
-        address: "59, Gandhi Road, Prince Chowk, Dehradun",
-        locality: "Gandhi Road",
-        parentId: 1476,
-        unserviceable: false,
-        veg: false,
-        select: false,
-        favorite: false,
-        tradeCampaignHeaders: [],
-        aggregatedDiscountInfo: {
-          header: "60% off",
-          shortDescriptionList: [
-            {
-              meta: "60% off | Use TRYNEW",
-              discountType: "Percentage",
-              operationType: "RESTAURANT",
-            },
-          ],
-          descriptionList: [
-            {
-              meta: "60% off up to ₹120 | Use code TRYNEW",
-              discountType: "Percentage",
-              operationType: "RESTAURANT",
-            },
-          ],
-          subHeader: "",
-          headerType: 0,
-          superFreedel: "",
-        },
-        aggregatedDiscountInfoV2: {
-          header: "60% OFF",
-          shortDescriptionList: [
-            {
-              meta: "Use TRYNEW",
-              discountType: "Percentage",
-              operationType: "RESTAURANT",
-            },
-          ],
-          descriptionList: [
-            {
-              meta: "60% off up to ₹120 | Use code TRYNEW",
-              discountType: "Percentage",
-              operationType: "RESTAURANT",
-            },
-          ],
-          subHeader: "",
-          headerType: 0,
-          superFreedel: "",
-        },
-        chain: [],
-        feeDetails: {
-          fees: [],
-          totalFees: 0,
-          message: "",
-          title: "",
-          amount: "",
-          icon: "",
-        },
-        availability: {
-          opened: true,
-          nextOpenMessage: "",
-          nextCloseMessage: "",
-        },
-        longDistanceEnabled: 0,
-        rainMode: "NONE",
-        thirdPartyAddress: false,
-        thirdPartyVendor: "",
-        adTrackingID: "",
-        badges: {
-          imageBased: [],
-          textBased: [],
-          textExtendedBadges: [],
-        },
-        lastMileTravelString: "0.6 kms",
-        hasSurge: false,
-        sla: {
-          restaurantId: "84229",
-          deliveryTime: 32,
-          minDeliveryTime: 32,
-          maxDeliveryTime: 32,
-          lastMileTravel: 0.6000000238418579,
-          lastMileDistance: 0,
-          serviceability: "SERVICEABLE",
-          rainMode: "NONE",
-          longDistance: "NOT_LONG_DISTANCE",
-          preferentialService: false,
-          iconType: "EMPTY",
-        },
-        promoted: false,
-        avgRating: "3.6",
-        totalRatings: 10000,
-        new: false,
-      },
-      subtype: "basic",
-    },
-    parentWidget: false,
-  },
-  {
-    cardType: "restaurant",
-    layoutAlignmentType: "VERTICAL",
-    data: {
-      type: "restaurant",
-      data: {
-        type: "F",
-        id: "74373",
-        name: "Walk In Woods (Ballupur)",
-        uuid: "b2f8e187-a60d-4cac-a6de-487621aa4ac8",
-        city: "22",
-        area: "Ballupur",
-        totalRatingsString: "10000+ ratings",
-        cloudinaryImageId: "rx6kpst6wxyw9vvj7wo8",
-        cuisines: ["North Indian", "Chinese", "Biryani"],
-        tags: [],
-        costForTwo: 30000,
-        costForTwoString: "₹300 FOR TWO",
-        deliveryTime: 33,
-        minDeliveryTime: 33,
-        maxDeliveryTime: 33,
-        slaString: "33 MINS",
-        lastMileTravel: 3,
-        slugs: {
-          restaurant: "walk-in-woods-ballupur-ballupur",
-          city: "dehradun",
-        },
-        cityState: "22",
-        address: "Walk In Woods Restaurant, 323, Ballupur, GMS Road",
-        locality: "General Mahadev Singh Road",
-        parentId: 359025,
-        unserviceable: false,
-        veg: false,
-        select: false,
-        favorite: false,
-        tradeCampaignHeaders: [],
-        aggregatedDiscountInfo: {
-          header: "50% off",
-          shortDescriptionList: [
-            {
-              meta: "50% off | Use TRYNEW",
-              discountType: "Percentage",
-              operationType: "RESTAURANT",
-            },
-          ],
-          descriptionList: [
-            {
-              meta: "50% off up to ₹100 | Use code TRYNEW",
-              discountType: "Percentage",
-              operationType: "RESTAURANT",
-            },
-          ],
-          subHeader: "",
-          headerType: 0,
-          superFreedel: "",
-        },
-        aggregatedDiscountInfoV2: {
-          header: "50% OFF",
-          shortDescriptionList: [
-            {
-              meta: "Use TRYNEW",
-              discountType: "Percentage",
-              operationType: "RESTAURANT",
-            },
-          ],
-          descriptionList: [
-            {
-              meta: "50% off up to ₹100 | Use code TRYNEW",
-              discountType: "Percentage",
-              operationType: "RESTAURANT",
-            },
-          ],
-          subHeader: "",
-          headerType: 0,
-          superFreedel: "",
-        },
-        ribbon: [
-          {
-            type: "PROMOTED",
-          },
+        "tags": [
+          
         ],
-        chain: [],
-        feeDetails: {
-          fees: [],
-          totalFees: 0,
-          message: "",
-          title: "",
-          amount: "",
-          icon: "",
+        "costForTwo": 20000,
+        "costForTwoString": "₹200 FOR TWO",
+        "deliveryTime": 40,
+        "minDeliveryTime": 40,
+        "maxDeliveryTime": 40,
+        "slaString": "40 MINS",
+        "lastMileTravel": 0,
+        "slugs": {
+          "restaurant": "domnik-pizza-dharampur",
+          "city": "Dehradun"
         },
-        availability: {
-          opened: true,
-          nextOpenMessage: "",
-          nextCloseMessage: "",
+        "cityState": "22",
+        "address": "",
+        "locality": "Nehru Colony",
+        "parentId": 73925,
+        "unserviceable": false,
+        "veg": false,
+        "select": false,
+        "favorite": false,
+        "tradeCampaignHeaders": [
+          
+        ],
+        "aggregatedDiscountInfo": {
+          "header": "40% off",
+          "shortDescriptionList": [
+            {
+              "meta": "40% off | Use TRYNEW",
+              "discountType": "Percentage",
+              "operationType": "RESTAURANT"
+            }
+          ],
+          "descriptionList": [
+            {
+              "meta": "40% off up to ₹80 | Use code TRYNEW",
+              "discountType": "Percentage",
+              "operationType": "RESTAURANT"
+            }
+          ],
+          "subHeader": "",
+          "headerType": 0,
+          "superFreedel": ""
         },
-        longDistanceEnabled: 0,
-        rainMode: "NONE",
-        thirdPartyAddress: false,
-        thirdPartyVendor: "",
-        adTrackingID:
-          "cid=6081388~p=19~eid=00000186-bc07-5cc4-0087-300000811305",
-        badges: {
-          imageBased: [],
-          textBased: [],
-          textExtendedBadges: [],
+        "aggregatedDiscountInfoV2": {
+          "header": "40% OFF",
+          "shortDescriptionList": [
+            {
+              "meta": "Use TRYNEW",
+              "discountType": "Percentage",
+              "operationType": "RESTAURANT"
+            }
+          ],
+          "descriptionList": [
+            {
+              "meta": "40% off up to ₹80 | Use code TRYNEW",
+              "discountType": "Percentage",
+              "operationType": "RESTAURANT"
+            }
+          ],
+          "subHeader": "",
+          "headerType": 0,
+          "superFreedel": ""
         },
-        lastMileTravelString: "3 kms",
-        hasSurge: false,
-        sla: {
-          restaurantId: "74373",
-          deliveryTime: 33,
-          minDeliveryTime: 33,
-          maxDeliveryTime: 33,
-          lastMileTravel: 3,
-          lastMileDistance: 0,
-          serviceability: "SERVICEABLE",
-          rainMode: "NONE",
-          longDistance: "NOT_LONG_DISTANCE",
-          preferentialService: false,
-          iconType: "EMPTY",
+        "chain": [
+          
+        ],
+        "feeDetails": {
+          "fees": [
+            {
+              "name": "BASE_DISTANCE",
+              "fee": 1900,
+              "message": ""
+            },
+            {
+              "name": "BASE_TIME",
+              "fee": 0,
+              "message": ""
+            },
+            {
+              "name": "ANCILLARY_SURGE_FEE",
+              "fee": 0,
+              "message": ""
+            }
+          ],
+          "totalFees": 1900,
+          "message": "",
+          "title": "Delivery Charge",
+          "amount": "1900",
+          "icon": ""
         },
-        promoted: true,
-        avgRating: "4.0",
-        totalRatings: 10000,
-        new: false,
+        "availability": {
+          "opened": true,
+          "nextOpenMessage": "",
+          "nextCloseMessage": ""
+        },
+        "longDistanceEnabled": 0,
+        "rainMode": "NONE",
+        "thirdPartyAddress": false,
+        "thirdPartyVendor": "",
+        "adTrackingID": "cid=6083212~p=3~eid=00000186-cfca-2314-1146-c6b100ec0300~56413",
+        "badges": {
+          "imageBased": [
+            
+          ],
+          "textBased": [
+            
+          ],
+          "textExtendedBadges": [
+            
+          ]
+        },
+        "lastMileTravelString": "3 kms",
+        "hasSurge": false,
+        "cta": {
+          "link": "swiggy://menu?restaurant_id=162634",
+          "type": "DEEPLINK",
+          "text": "RESTAURANT_MENU"
+        },
+        "sla": {
+          "restaurantId": "",
+          "deliveryTime": 40,
+          "minDeliveryTime": 40,
+          "maxDeliveryTime": 40,
+          "lastMileTravel": 0,
+          "lastMileDistance": 3,
+          "serviceability": "SERVICEABLE",
+          "rainMode": "NONE",
+          "preferentialService": false,
+          "iconType": "EMPTY"
+        },
+        "promoted": true,
+        "avgRating": "3.9",
+        "totalRatings": 0,
+        "new": false
       },
-      subtype: "basic",
+      "subtype": "basic"
     },
-    parentWidget: false,
+    "parentWidget": false
   },
   {
-    cardType: "restaurant",
-    layoutAlignmentType: "VERTICAL",
-    data: {
-      type: "restaurant",
-      data: {
-        type: "F",
-        id: "69107",
-        name: "Kwik Bite Centre",
-        uuid: "374eca84-7ea4-49df-bce3-bf455bb520db",
-        city: "22",
-        area: "Paltan Bazaar",
-        totalRatingsString: "10000+ ratings",
-        cloudinaryImageId: "jewu5ej1ur3c3ijdc4hb",
-        cuisines: ["Indian", "South Indian", "Chinese", "Italian"],
-        tags: [],
-        costForTwo: 15000,
-        costForTwoString: "₹150 FOR TWO",
-        deliveryTime: 35,
-        minDeliveryTime: 35,
-        maxDeliveryTime: 35,
-        slaString: "35 MINS",
-        lastMileTravel: 1.5,
-        slugs: {
-          restaurant: "kwik-bite-centre-paltan-bazaar-chukkuwala",
-          city: "dehradun",
+    "cardType": "restaurant",
+    "layoutAlignmentType": "VERTICAL",
+    "data": {
+      "type": "restaurant",
+      "data": {
+        "type": "F",
+        "id": "285542",
+        "name": "DA MEXICAN PIZZA",
+        "uuid": "d274c144-c082-43e4-8fbb-c564aa831525",
+        "city": "22",
+        "area": "Kaonli",
+        "totalRatingsString": "",
+        "cloudinaryImageId": "nyrhrvhhkwttbaj3smrv",
+        "cuisines": [
+          "Pizzas",
+          "Beverages"
+        ],
+        "tags": [
+          
+        ],
+        "costForTwo": 30000,
+        "costForTwoString": "₹300 FOR TWO",
+        "deliveryTime": 29,
+        "minDeliveryTime": 29,
+        "maxDeliveryTime": 29,
+        "slaString": "29 MINS",
+        "lastMileTravel": 0,
+        "slugs": {
+          "restaurant": "da-mexican-pizza-patel-nagar-patel-nagar",
+          "city": "Dehradun"
         },
-        cityState: "22",
-        address: "2/4, Clock Tower, Gandhi Road, Paltan Bazaar, Dehradun",
-        locality: "Gandhi Road",
-        parentId: 15808,
-        unserviceable: false,
-        veg: false,
-        select: false,
-        favorite: false,
-        tradeCampaignHeaders: [],
-        aggregatedDiscountInfo: {
-          header: "40% off",
-          shortDescriptionList: [
+        "cityState": "22",
+        "address": "",
+        "locality": "Doon Medical College Road",
+        "parentId": 67423,
+        "unserviceable": false,
+        "veg": false,
+        "select": false,
+        "favorite": false,
+        "tradeCampaignHeaders": [
+          
+        ],
+        "aggregatedDiscountInfo": {
+          "header": "60% off",
+          "shortDescriptionList": [
             {
-              meta: "40% off | Use TRYNEW",
-              discountType: "Percentage",
-              operationType: "RESTAURANT",
-            },
+              "meta": "60% off | Use TRYNEW",
+              "discountType": "Percentage",
+              "operationType": "RESTAURANT"
+            }
           ],
-          descriptionList: [
+          "descriptionList": [
             {
-              meta: "40% off up to ₹80 | Use code TRYNEW",
-              discountType: "Percentage",
-              operationType: "RESTAURANT",
-            },
+              "meta": "60% off up to ₹120 | Use code TRYNEW",
+              "discountType": "Percentage",
+              "operationType": "RESTAURANT"
+            }
           ],
-          subHeader: "",
-          headerType: 0,
-          superFreedel: "",
+          "subHeader": "",
+          "headerType": 0,
+          "superFreedel": ""
         },
-        aggregatedDiscountInfoV2: {
-          header: "40% OFF",
-          shortDescriptionList: [
+        "aggregatedDiscountInfoV2": {
+          "header": "60% OFF",
+          "shortDescriptionList": [
             {
-              meta: "Use TRYNEW",
-              discountType: "Percentage",
-              operationType: "RESTAURANT",
-            },
+              "meta": "Use TRYNEW",
+              "discountType": "Percentage",
+              "operationType": "RESTAURANT"
+            }
           ],
-          descriptionList: [
+          "descriptionList": [
             {
-              meta: "40% off up to ₹80 | Use code TRYNEW",
-              discountType: "Percentage",
-              operationType: "RESTAURANT",
-            },
+              "meta": "60% off up to ₹120 | Use code TRYNEW",
+              "discountType": "Percentage",
+              "operationType": "RESTAURANT"
+            }
           ],
-          subHeader: "",
-          headerType: 0,
-          superFreedel: "",
+          "subHeader": "",
+          "headerType": 0,
+          "superFreedel": ""
         },
-        chain: [],
-        feeDetails: {
-          fees: [],
-          totalFees: 0,
-          message: "",
-          title: "",
-          amount: "",
-          icon: "",
+        "chain": [
+          
+        ],
+        "feeDetails": {
+          "fees": [
+            {
+              "name": "BASE_DISTANCE",
+              "fee": 1900,
+              "message": ""
+            },
+            {
+              "name": "BASE_TIME",
+              "fee": 0,
+              "message": ""
+            },
+            {
+              "name": "ANCILLARY_SURGE_FEE",
+              "fee": 0,
+              "message": ""
+            }
+          ],
+          "totalFees": 1900,
+          "message": "",
+          "title": "Delivery Charge",
+          "amount": "1900",
+          "icon": ""
         },
-        availability: {
-          opened: true,
-          nextOpenMessage: "",
-          nextCloseMessage: "",
+        "availability": {
+          "opened": true,
+          "nextOpenMessage": "",
+          "nextCloseMessage": ""
         },
-        longDistanceEnabled: 0,
-        rainMode: "NONE",
-        thirdPartyAddress: false,
-        thirdPartyVendor: "",
-        adTrackingID: "",
-        badges: {
-          imageBased: [],
-          textBased: [],
-          textExtendedBadges: [],
+        "longDistanceEnabled": 0,
+        "rainMode": "NONE",
+        "thirdPartyAddress": false,
+        "thirdPartyVendor": "",
+        "adTrackingID": "",
+        "badges": {
+          "imageBased": [
+            
+          ],
+          "textBased": [
+            
+          ],
+          "textExtendedBadges": [
+            
+          ]
         },
-        lastMileTravelString: "1.5 kms",
-        hasSurge: false,
-        sla: {
-          restaurantId: "69107",
-          deliveryTime: 35,
-          minDeliveryTime: 35,
-          maxDeliveryTime: 35,
-          lastMileTravel: 1.5,
-          lastMileDistance: 0,
-          serviceability: "SERVICEABLE",
-          rainMode: "NONE",
-          longDistance: "NOT_LONG_DISTANCE",
-          preferentialService: false,
-          iconType: "EMPTY",
+        "lastMileTravelString": "2.1 kms",
+        "hasSurge": false,
+        "cta": {
+          "link": "swiggy://menu?restaurant_id=285542",
+          "type": "DEEPLINK",
+          "text": "RESTAURANT_MENU"
         },
-        promoted: false,
-        avgRating: "3.9",
-        totalRatings: 10000,
-        new: false,
+        "sla": {
+          "restaurantId": "",
+          "deliveryTime": 29,
+          "minDeliveryTime": 29,
+          "maxDeliveryTime": 29,
+          "lastMileTravel": 0,
+          "lastMileDistance": 2.1,
+          "serviceability": "SERVICEABLE",
+          "rainMode": "NONE",
+          "preferentialService": false,
+          "iconType": "EMPTY"
+        },
+        "promoted": false,
+        "avgRating": "3.5",
+        "totalRatings": 0,
+        "new": false
       },
-      subtype: "basic",
+      "subtype": "basic"
     },
-    parentWidget: false,
+    "parentWidget": false
   },
   {
-    cardType: "restaurant",
-    layoutAlignmentType: "VERTICAL",
-    data: {
-      type: "restaurant",
-      data: {
-        type: "F",
-        id: "240107",
-        name: "Burger King",
-        uuid: "c43882eb-6cb2-4504-abcd-5526a97613bf",
-        city: "22",
-        area: "Karanpur",
-        totalRatingsString: "10000+ ratings",
-        cloudinaryImageId: "qnfkbrlvqqyfvygbfihj",
-        cuisines: ["Burgers", "American"],
-        tags: [],
-        costForTwo: 35000,
-        costForTwoString: "₹350 FOR TWO",
-        deliveryTime: 39,
-        minDeliveryTime: 39,
-        maxDeliveryTime: 39,
-        slaString: "39 MINS",
-        lastMileTravel: 2.299999952316284,
-        slugs: {
-          restaurant: "burger-king-ashtley-hall-hathibarkala",
-          city: "dehradun",
+    "cardType": "restaurant",
+    "layoutAlignmentType": "VERTICAL",
+    "data": {
+      "type": "restaurant",
+      "data": {
+        "type": "F",
+        "id": "78973",
+        "name": "Pizza Hut",
+        "uuid": "074d44b6-b270-49f2-ba82-064240e93080",
+        "city": "22",
+        "area": "Balliwala",
+        "totalRatingsString": "",
+        "cloudinaryImageId": "govjct4ktqbg8miw92ye",
+        "cuisines": [
+          "Pizzas"
+        ],
+        "tags": [
+          
+        ],
+        "costForTwo": 35000,
+        "costForTwoString": "₹350 FOR TWO",
+        "deliveryTime": 36,
+        "minDeliveryTime": 36,
+        "maxDeliveryTime": 36,
+        "slaString": "36 MINS",
+        "lastMileTravel": 0,
+        "slugs": {
+          "restaurant": "pizza-hut-indira-nagar-ballupur",
+          "city": "Dehradun"
         },
-        cityState: "22",
-        address:
-          "BURGER KING, 9, GROUND , FIRST FLOOR AND TARRECE, ASHTLEY HALL, DEHRADUN , UTTERAKHAND, 248001",
-        locality: "Rajpur Road",
-        parentId: 166,
-        unserviceable: false,
-        veg: false,
-        select: false,
-        favorite: false,
-        tradeCampaignHeaders: [],
-        aggregatedDiscountInfo: {
-          header: "40% off",
-          shortDescriptionList: [
+        "cityState": "22",
+        "address": "",
+        "locality": "Vasant Vihar",
+        "parentId": 721,
+        "unserviceable": false,
+        "veg": false,
+        "select": false,
+        "favorite": false,
+        "tradeCampaignHeaders": [
+          
+        ],
+        "aggregatedDiscountInfo": {
+          "header": "FREE DELIVERY",
+          "shortDescriptionList": [
             {
-              meta: "40% off | Use SWIGGYIT",
-              discountType: "Percentage",
-              operationType: "RESTAURANT",
-            },
+              "meta": "FREE DELIVERY",
+              "discountType": "FREE_DELIVERY",
+              "operationType": "RESTAURANT"
+            }
           ],
-          descriptionList: [
+          "descriptionList": [
             {
-              meta: "40% off up to ₹80 | Use code SWIGGYIT",
-              discountType: "Percentage",
-              operationType: "RESTAURANT",
-            },
+              "meta": "FREE DELIVERY",
+              "discountType": "FREE_DELIVERY",
+              "operationType": "RESTAURANT"
+            }
           ],
-          subHeader: "",
-          headerType: 0,
-          superFreedel: "",
+          "subHeader": "",
+          "headerType": 0,
+          "superFreedel": ""
         },
-        aggregatedDiscountInfoV2: {
-          header: "40% OFF",
-          shortDescriptionList: [
+        "aggregatedDiscountInfoV2": {
+          "header": "",
+          "shortDescriptionList": [
             {
-              meta: "Use SWIGGYIT",
-              discountType: "Percentage",
-              operationType: "RESTAURANT",
-            },
+              "meta": "Free Delivery",
+              "discountType": "FREE_DELIVERY",
+              "operationType": "RESTAURANT"
+            }
           ],
-          descriptionList: [
+          "descriptionList": [
             {
-              meta: "40% off up to ₹80 | Use code SWIGGYIT",
-              discountType: "Percentage",
-              operationType: "RESTAURANT",
-            },
+              "meta": "FREE DELIVERY",
+              "discountType": "FREE_DELIVERY",
+              "operationType": "RESTAURANT"
+            }
           ],
-          subHeader: "",
-          headerType: 0,
-          superFreedel: "",
+          "subHeader": "",
+          "headerType": 0,
+          "superFreedel": ""
         },
-        chain: [],
-        feeDetails: {
-          fees: [],
-          totalFees: 0,
-          message: "",
-          title: "",
-          amount: "",
-          icon: "",
+        "chain": [
+          
+        ],
+        "feeDetails": {
+          "fees": [
+            {
+              "name": "BASE_DISTANCE",
+              "fee": 1900,
+              "message": ""
+            },
+            {
+              "name": "BASE_TIME",
+              "fee": 0,
+              "message": ""
+            },
+            {
+              "name": "ANCILLARY_SURGE_FEE",
+              "fee": 0,
+              "message": ""
+            }
+          ],
+          "totalFees": 1900,
+          "message": "",
+          "title": "Delivery Charge",
+          "amount": "1900",
+          "icon": ""
         },
-        availability: {
-          opened: true,
-          nextOpenMessage: "",
-          nextCloseMessage: "",
+        "availability": {
+          "opened": true,
+          "nextOpenMessage": "",
+          "nextCloseMessage": ""
         },
-        longDistanceEnabled: 0,
-        rainMode: "NONE",
-        thirdPartyAddress: false,
-        thirdPartyVendor: "",
-        adTrackingID: "",
-        badges: {
-          imageBased: [],
-          textBased: [],
-          textExtendedBadges: [],
+        "longDistanceEnabled": 0,
+        "rainMode": "NONE",
+        "thirdPartyAddress": false,
+        "thirdPartyVendor": "",
+        "adTrackingID": "",
+        "badges": {
+          "imageBased": [
+            
+          ],
+          "textBased": [
+            
+          ],
+          "textExtendedBadges": [
+            
+          ]
         },
-        lastMileTravelString: "2.2 kms",
-        hasSurge: false,
-        sla: {
-          restaurantId: "240107",
-          deliveryTime: 39,
-          minDeliveryTime: 39,
-          maxDeliveryTime: 39,
-          lastMileTravel: 2.299999952316284,
-          lastMileDistance: 0,
-          serviceability: "SERVICEABLE",
-          rainMode: "NONE",
-          longDistance: "NOT_LONG_DISTANCE",
-          preferentialService: false,
-          iconType: "EMPTY",
+        "lastMileTravelString": "3.7 kms",
+        "hasSurge": false,
+        "cta": {
+          "link": "swiggy://menu?restaurant_id=78973",
+          "type": "DEEPLINK",
+          "text": "RESTAURANT_MENU"
         },
-        promoted: false,
-        avgRating: "4.2",
-        totalRatings: 10000,
-        new: false,
+        "sla": {
+          "restaurantId": "",
+          "deliveryTime": 36,
+          "minDeliveryTime": 36,
+          "maxDeliveryTime": 36,
+          "lastMileTravel": 0,
+          "lastMileDistance": 3.7,
+          "serviceability": "SERVICEABLE",
+          "rainMode": "NONE",
+          "preferentialService": false,
+          "iconType": "EMPTY"
+        },
+        "promoted": false,
+        "avgRating": "3.5",
+        "totalRatings": 0,
+        "new": false
       },
-      subtype: "basic",
+      "subtype": "basic"
     },
-    parentWidget: false,
+    "parentWidget": false
   },
   {
-    cardType: "restaurant",
-    layoutAlignmentType: "VERTICAL",
-    data: {
-      type: "restaurant",
-      data: {
-        type: "F",
-        id: "103236",
-        name: "Chhappan Bhog",
-        uuid: "31e2759d-595b-42ab-9ae4-0852ea97a9fa",
-        city: "22",
-        area: "Race Course",
-        totalRatingsString: "1000+ ratings",
-        cloudinaryImageId: "p8aha9iaycwzdudfuz2z",
-        cuisines: ["Sweets", "Desserts", "Beverages"],
-        tags: [],
-        costForTwo: 15000,
-        costForTwoString: "₹150 FOR TWO",
-        deliveryTime: 24,
-        minDeliveryTime: 24,
-        maxDeliveryTime: 24,
-        slaString: "24 MINS",
-        lastMileTravel: 0.699999988079071,
-        slugs: {
-          restaurant: "chappan-bhog-race-course-dehradun-race-course-dehradun",
-          city: "dehradun",
+    "cardType": "restaurant",
+    "layoutAlignmentType": "VERTICAL",
+    "data": {
+      "type": "restaurant",
+      "data": {
+        "type": "F",
+        "id": "300610",
+        "name": "DA PEPPER PIZZA",
+        "uuid": "7980e1d1-ff15-4a9b-b546-f77e76a21957",
+        "city": "22",
+        "area": "Kaonli",
+        "totalRatingsString": "",
+        "cloudinaryImageId": "me5fwj6a6arywzo8lrrh",
+        "cuisines": [
+          "Pizzas"
+        ],
+        "tags": [
+          
+        ],
+        "costForTwo": 30000,
+        "costForTwoString": "₹300 FOR TWO",
+        "deliveryTime": 30,
+        "minDeliveryTime": 30,
+        "maxDeliveryTime": 30,
+        "slaString": "30 MINS",
+        "lastMileTravel": 0,
+        "slugs": {
+          "restaurant": "da-pepper-pizza-patel-nagar-patel-nagar",
+          "city": "Dehradun"
         },
-        cityState: "22",
-        address: "chappan bhog haridwar road near prince chowk dehradun",
-        locality: "Haridwar Road",
-        parentId: 60152,
-        unserviceable: false,
-        veg: true,
-        select: false,
-        favorite: false,
-        tradeCampaignHeaders: [],
-        aggregatedDiscountInfo: {
-          header: "FREE DELIVERY",
-          shortDescriptionList: [
+        "cityState": "22",
+        "address": "",
+        "locality": "Doon Medical College Road",
+        "parentId": 13393,
+        "unserviceable": false,
+        "veg": false,
+        "select": false,
+        "favorite": false,
+        "tradeCampaignHeaders": [
+          
+        ],
+        "aggregatedDiscountInfo": {
+          "header": "Flat ₹125 off",
+          "shortDescriptionList": [
             {
-              meta: "FREE DELIVERY",
-              discountType: "FREE_DELIVERY",
-              operationType: "RESTAURANT",
-            },
+              "meta": "Flat 125/- off | Use WEEKENDFEST",
+              "discountType": "Flat",
+              "operationType": "RESTAURANT"
+            }
           ],
-          descriptionList: [
+          "descriptionList": [
             {
-              meta: "FREE DELIVERY",
-              discountType: "FREE_DELIVERY",
-              operationType: "RESTAURANT",
-            },
+              "meta": "Flat 125/- off | Use WEEKENDFEST",
+              "discountType": "Flat",
+              "operationType": "RESTAURANT"
+            }
           ],
-          subHeader: "",
-          headerType: 0,
-          superFreedel: "",
+          "subHeader": "",
+          "headerType": 0,
+          "superFreedel": ""
         },
-        aggregatedDiscountInfoV2: {
-          header: "",
-          shortDescriptionList: [
+        "aggregatedDiscountInfoV2": {
+          "header": "₹125 OFF",
+          "shortDescriptionList": [
             {
-              meta: "Free Delivery",
-              discountType: "FREE_DELIVERY",
-              operationType: "RESTAURANT",
-            },
+              "meta": "Use WEEKENDFEST",
+              "discountType": "Flat",
+              "operationType": "RESTAURANT"
+            }
           ],
-          descriptionList: [
+          "descriptionList": [
             {
-              meta: "FREE DELIVERY",
-              discountType: "FREE_DELIVERY",
-              operationType: "RESTAURANT",
-            },
+              "meta": "Flat 125/- off | Use WEEKENDFEST",
+              "discountType": "Flat",
+              "operationType": "RESTAURANT"
+            }
           ],
-          subHeader: "",
-          headerType: 0,
-          superFreedel: "",
+          "subHeader": "",
+          "headerType": 0,
+          "superFreedel": ""
         },
-        chain: [],
-        feeDetails: {
-          fees: [],
-          totalFees: 0,
-          message: "",
-          title: "",
-          amount: "",
-          icon: "",
+        "chain": [
+          
+        ],
+        "feeDetails": {
+          "fees": [
+            {
+              "name": "BASE_DISTANCE",
+              "fee": 1900,
+              "message": ""
+            },
+            {
+              "name": "BASE_TIME",
+              "fee": 0,
+              "message": ""
+            },
+            {
+              "name": "ANCILLARY_SURGE_FEE",
+              "fee": 0,
+              "message": ""
+            }
+          ],
+          "totalFees": 1900,
+          "message": "",
+          "title": "Delivery Charge",
+          "amount": "1900",
+          "icon": ""
         },
-        availability: {
-          opened: true,
-          nextOpenMessage: "",
-          nextCloseMessage: "",
+        "availability": {
+          "opened": true,
+          "nextOpenMessage": "",
+          "nextCloseMessage": ""
         },
-        longDistanceEnabled: 0,
-        rainMode: "NONE",
-        thirdPartyAddress: false,
-        thirdPartyVendor: "",
-        adTrackingID: "",
-        badges: {
-          imageBased: [],
-          textBased: [],
-          textExtendedBadges: [],
+        "longDistanceEnabled": 0,
+        "rainMode": "NONE",
+        "thirdPartyAddress": false,
+        "thirdPartyVendor": "",
+        "adTrackingID": "cid=6082132~p=4~eid=00000186-cfca-2314-1146-c6b200ec0411~56413",
+        "badges": {
+          "imageBased": [
+            
+          ],
+          "textBased": [
+            
+          ],
+          "textExtendedBadges": [
+            
+          ]
         },
-        lastMileTravelString: "0.6 kms",
-        hasSurge: false,
-        sla: {
-          restaurantId: "103236",
-          deliveryTime: 24,
-          minDeliveryTime: 24,
-          maxDeliveryTime: 24,
-          lastMileTravel: 0.699999988079071,
-          lastMileDistance: 0,
-          serviceability: "SERVICEABLE",
-          rainMode: "NONE",
-          longDistance: "NOT_LONG_DISTANCE",
-          preferentialService: false,
-          iconType: "EMPTY",
+        "lastMileTravelString": "2.1 kms",
+        "hasSurge": false,
+        "cta": {
+          "link": "swiggy://menu?restaurant_id=300610",
+          "type": "DEEPLINK",
+          "text": "RESTAURANT_MENU"
         },
-        promoted: false,
-        avgRating: "4.4",
-        totalRatings: 1000,
-        new: false,
+        "sla": {
+          "restaurantId": "",
+          "deliveryTime": 30,
+          "minDeliveryTime": 30,
+          "maxDeliveryTime": 30,
+          "lastMileTravel": 0,
+          "lastMileDistance": 2.1,
+          "serviceability": "SERVICEABLE",
+          "rainMode": "NONE",
+          "preferentialService": false,
+          "iconType": "EMPTY"
+        },
+        "promoted": true,
+        "avgRating": "3.5",
+        "totalRatings": 0,
+        "new": false
       },
-      subtype: "basic",
+      "subtype": "basic"
     },
-    parentWidget: false,
+    "parentWidget": false
   },
   {
-    cardType: "restaurant",
-    layoutAlignmentType: "VERTICAL",
-    data: {
-      type: "restaurant",
-      data: {
-        type: "F",
-        id: "167593",
-        name: "Vikas Bakers & Confectioners",
-        uuid: "f04a0ba9-c6b9-4776-93c9-c7e943a734c0",
-        city: "22",
-        area: "Race Course",
-        totalRatingsString: "50+ ratings",
-        cloudinaryImageId: "aplcdbpidp1h62trpidp",
-        cuisines: ["Bakery", "Snacks"],
-        tags: [],
-        costForTwo: 15000,
-        costForTwoString: "₹150 FOR TWO",
-        deliveryTime: 31,
-        minDeliveryTime: 31,
-        maxDeliveryTime: 31,
-        slaString: "31 MINS",
-        lastMileTravel: 0.699999988079071,
-        slugs: {
-          restaurant: "vikas-bakers-confectioners-race-course-dehradun",
-          city: "dehradun",
+    "cardType": "restaurant",
+    "layoutAlignmentType": "VERTICAL",
+    "data": {
+      "type": "restaurant",
+      "data": {
+        "type": "F",
+        "id": "343705",
+        "name": "Domino's Pizza",
+        "uuid": "e82adc4a-2663-494c-8efb-ab30faae8c72",
+        "city": "22",
+        "area": "Gandhi Nagar",
+        "totalRatingsString": "",
+        "cloudinaryImageId": "lfgfr3in66kn26vzt1th",
+        "cuisines": [
+          "Pizzas",
+          "Italian",
+          "Pastas",
+          "Desserts"
+        ],
+        "tags": [
+          
+        ],
+        "costForTwo": 40000,
+        "costForTwoString": "₹400 FOR TWO",
+        "deliveryTime": 25,
+        "minDeliveryTime": 25,
+        "maxDeliveryTime": 25,
+        "slaString": "25 MINS",
+        "lastMileTravel": 0,
+        "slugs": {
+          "restaurant": "dominos-pizza-prince-chowk-dehradun-chukkuwala",
+          "city": "Dehradun"
         },
-        cityState: "22",
-        address:
-          "Pipal Mandi Chowk, Hanuman Chowk, Dhamawala Mohalla, Paltan Bazaar, Dehradun, Uttarakhand",
-        locality: "Peepal Mandi Chowk",
-        parentId: 223376,
-        unserviceable: false,
-        veg: true,
-        select: false,
-        favorite: false,
-        tradeCampaignHeaders: [],
-        aggregatedDiscountInfo: {
-          header: "FREE DELIVERY",
-          shortDescriptionList: [
+        "cityState": "22",
+        "address": "",
+        "locality": "Sector 4",
+        "parentId": 2456,
+        "unserviceable": false,
+        "veg": false,
+        "select": false,
+        "favorite": false,
+        "tradeCampaignHeaders": [
+          
+        ],
+        "chain": [
+          
+        ],
+        "feeDetails": {
+          "fees": [
             {
-              meta: "FREE DELIVERY",
-              discountType: "FREE_DELIVERY",
-              operationType: "RESTAURANT",
+              "name": "BASE_DISTANCE",
+              "fee": 1900,
+              "message": ""
             },
-          ],
-          descriptionList: [
             {
-              meta: "FREE DELIVERY",
-              discountType: "FREE_DELIVERY",
-              operationType: "RESTAURANT",
+              "name": "BASE_TIME",
+              "fee": 0,
+              "message": ""
             },
-          ],
-          subHeader: "",
-          headerType: 0,
-          superFreedel: "",
-        },
-        aggregatedDiscountInfoV2: {
-          header: "",
-          shortDescriptionList: [
             {
-              meta: "Free Delivery",
-              discountType: "FREE_DELIVERY",
-              operationType: "RESTAURANT",
-            },
+              "name": "ANCILLARY_SURGE_FEE",
+              "fee": 0,
+              "message": ""
+            }
           ],
-          descriptionList: [
-            {
-              meta: "FREE DELIVERY",
-              discountType: "FREE_DELIVERY",
-              operationType: "RESTAURANT",
-            },
+          "totalFees": 1900,
+          "message": "",
+          "title": "Delivery Charge",
+          "amount": "1900",
+          "icon": ""
+        },
+        "availability": {
+          "opened": true,
+          "nextOpenMessage": "",
+          "nextCloseMessage": ""
+        },
+        "longDistanceEnabled": 0,
+        "rainMode": "NONE",
+        "thirdPartyAddress": false,
+        "thirdPartyVendor": "",
+        "adTrackingID": "",
+        "badges": {
+          "imageBased": [
+            
           ],
-          subHeader: "",
-          headerType: 0,
-          superFreedel: "",
+          "textBased": [
+            
+          ],
+          "textExtendedBadges": [
+            
+          ]
         },
-        chain: [],
-        feeDetails: {
-          fees: [],
-          totalFees: 0,
-          message: "",
-          title: "",
-          amount: "",
-          icon: "",
+        "hasSurge": false,
+        "cta": {
+          "link": "swiggy://menu?restaurant_id=343705",
+          "type": "DEEPLINK",
+          "text": "RESTAURANT_MENU"
         },
-        availability: {
-          opened: true,
-          nextOpenMessage: "",
-          nextCloseMessage: "",
+        "sla": {
+          "restaurantId": "",
+          "deliveryTime": 25,
+          "minDeliveryTime": 25,
+          "maxDeliveryTime": 25,
+          "lastMileTravel": 0,
+          "lastMileDistance": 0,
+          "serviceability": "SERVICEABLE",
+          "rainMode": "NONE",
+          "preferentialService": false,
+          "iconType": "EMPTY"
         },
-        longDistanceEnabled: 0,
-        rainMode: "NONE",
-        thirdPartyAddress: false,
-        thirdPartyVendor: "",
-        adTrackingID: "",
-        badges: {
-          imageBased: [],
-          textBased: [],
-          textExtendedBadges: [],
-        },
-        lastMileTravelString: "0.6 kms",
-        hasSurge: false,
-        sla: {
-          restaurantId: "167593",
-          deliveryTime: 31,
-          minDeliveryTime: 31,
-          maxDeliveryTime: 31,
-          lastMileTravel: 0.699999988079071,
-          lastMileDistance: 0,
-          serviceability: "SERVICEABLE",
-          rainMode: "NONE",
-          longDistance: "NOT_LONG_DISTANCE",
-          preferentialService: false,
-          iconType: "EMPTY",
-        },
-        promoted: false,
-        avgRating: "4.0",
-        totalRatings: 50,
-        new: false,
+        "promoted": false,
+        "avgRating": "4.0",
+        "totalRatings": 0,
+        "new": false
       },
-      subtype: "basic",
+      "subtype": "basic"
     },
-    parentWidget: false,
+    "parentWidget": false
   },
   {
-    cardType: "restaurant",
-    layoutAlignmentType: "VERTICAL",
-    data: {
-      type: "restaurant",
-      data: {
-        type: "F",
-        id: "74796",
-        name: "Five Star Janta",
-        uuid: "56af1ba8-e7ed-45ef-9a58-86307aae854c",
-        city: "22",
-        area: "Ballupur",
-        totalRatingsString: "5000+ ratings",
-        cloudinaryImageId: "avlujvfa7huclgj7e8z8",
-        cuisines: [
-          "Sweets",
-          "Bakery",
-          "Chinese",
+    "cardType": "restaurant",
+    "layoutAlignmentType": "VERTICAL",
+    "data": {
+      "type": "restaurant",
+      "data": {
+        "type": "F",
+        "id": "365571",
+        "name": "Oven Story Pizza",
+        "uuid": "81f79db2-1da9-4a7f-b6d4-254513f0e032",
+        "city": "22",
+        "area": "Rajpur",
+        "totalRatingsString": "",
+        "cloudinaryImageId": "ab979bffbd658e74de650a15ca0092a3",
+        "cuisines": [
+          "Pizzas"
+        ],
+        "tags": [
+          
+        ],
+        "costForTwo": 40000,
+        "costForTwoString": "₹400 FOR TWO",
+        "deliveryTime": 46,
+        "minDeliveryTime": 46,
+        "maxDeliveryTime": 46,
+        "slaString": "46 MINS",
+        "lastMileTravel": 0,
+        "slugs": {
+          "restaurant": "ovenstory-pizza-rajpura-road-hathibarkala",
+          "city": "Dehradun"
+        },
+        "cityState": "22",
+        "address": "",
+        "locality": "Rajpur Road",
+        "parentId": 3534,
+        "unserviceable": false,
+        "veg": false,
+        "select": false,
+        "favorite": false,
+        "tradeCampaignHeaders": [
+          
+        ],
+        "aggregatedDiscountInfo": {
+          "header": "FLAT125 off",
+          "shortDescriptionList": [
+            {
+              "meta": "FLAT125 off | Use FLATDEAL",
+              "discountType": "Flat",
+              "operationType": "RESTAURANT"
+            }
+          ],
+          "descriptionList": [
+            {
+              "meta": "FLAT125 off | Use FLATDEAL",
+              "discountType": "Flat",
+              "operationType": "RESTAURANT"
+            }
+          ],
+          "subHeader": "",
+          "headerType": 0,
+          "superFreedel": ""
+        },
+        "aggregatedDiscountInfoV2": {
+          "header": "₹125 OFF",
+          "shortDescriptionList": [
+            {
+              "meta": "Use FLATDEAL",
+              "discountType": "Flat",
+              "operationType": "RESTAURANT"
+            }
+          ],
+          "descriptionList": [
+            {
+              "meta": "FLAT125 off | Use FLATDEAL",
+              "discountType": "Flat",
+              "operationType": "RESTAURANT"
+            }
+          ],
+          "subHeader": "",
+          "headerType": 0,
+          "superFreedel": ""
+        },
+        "chain": [
+          
+        ],
+        "feeDetails": {
+          "fees": [
+            {
+              "name": "BASE_DISTANCE",
+              "fee": 2400,
+              "message": ""
+            },
+            {
+              "name": "BASE_TIME",
+              "fee": 0,
+              "message": ""
+            },
+            {
+              "name": "ANCILLARY_SURGE_FEE",
+              "fee": 0,
+              "message": ""
+            }
+          ],
+          "totalFees": 2400,
+          "message": "",
+          "title": "Delivery Charge",
+          "amount": "2400",
+          "icon": ""
+        },
+        "availability": {
+          "opened": true,
+          "nextOpenMessage": "",
+          "nextCloseMessage": ""
+        },
+        "longDistanceEnabled": 0,
+        "rainMode": "NONE",
+        "thirdPartyAddress": false,
+        "thirdPartyVendor": "",
+        "adTrackingID": "",
+        "badges": {
+          "imageBased": [
+            
+          ],
+          "textBased": [
+            
+          ],
+          "textExtendedBadges": [
+            
+          ]
+        },
+        "lastMileTravelString": "4.3 kms",
+        "hasSurge": false,
+        "cta": {
+          "link": "swiggy://menu?restaurant_id=365571",
+          "type": "DEEPLINK",
+          "text": "RESTAURANT_MENU"
+        },
+        "sla": {
+          "restaurantId": "",
+          "deliveryTime": 46,
+          "minDeliveryTime": 46,
+          "maxDeliveryTime": 46,
+          "lastMileTravel": 0,
+          "lastMileDistance": 4.3,
+          "serviceability": "SERVICEABLE",
+          "rainMode": "NONE",
+          "preferentialService": false,
+          "iconType": "EMPTY"
+        },
+        "promoted": false,
+        "avgRating": "3.8",
+        "totalRatings": 0,
+        "new": false
+      },
+      "subtype": "basic"
+    },
+    "parentWidget": false
+  },
+  {
+    "cardType": "restaurant",
+    "layoutAlignmentType": "VERTICAL",
+    "data": {
+      "type": "restaurant",
+      "data": {
+        "type": "F",
+        "id": "144183",
+        "name": "The Pizza Basket",
+        "uuid": "26cd59d5-07b4-4af9-908f-10ec59f2cee1",
+        "city": "22",
+        "area": "Jogiwala",
+        "totalRatingsString": "",
+        "cloudinaryImageId": "cm5f622lbjtwq2a1k2eb",
+        "cuisines": [
+          "Italian",
+          "Pizzas"
+        ],
+        "tags": [
+          
+        ],
+        "costForTwo": 25000,
+        "costForTwoString": "₹250 FOR TWO",
+        "deliveryTime": 49,
+        "minDeliveryTime": 49,
+        "maxDeliveryTime": 49,
+        "slaString": "49 MINS",
+        "lastMileTravel": 0,
+        "slugs": {
+          "restaurant": "the-pizza-basket-dharampur-dharampur",
+          "city": "Dehradun"
+        },
+        "cityState": "22",
+        "address": "",
+        "locality": "Ring Road",
+        "parentId": 15339,
+        "unserviceable": false,
+        "veg": false,
+        "select": false,
+        "favorite": false,
+        "tradeCampaignHeaders": [
+          
+        ],
+        "aggregatedDiscountInfo": {
+          "header": "Flat ₹125 off",
+          "shortDescriptionList": [
+            {
+              "meta": "Flat 125/- off | Use WEEKENDFEST",
+              "discountType": "Flat",
+              "operationType": "RESTAURANT"
+            }
+          ],
+          "descriptionList": [
+            {
+              "meta": "Flat 125/- off | Use WEEKENDFEST",
+              "discountType": "Flat",
+              "operationType": "RESTAURANT"
+            }
+          ],
+          "subHeader": "",
+          "headerType": 0,
+          "superFreedel": ""
+        },
+        "aggregatedDiscountInfoV2": {
+          "header": "₹125 OFF",
+          "shortDescriptionList": [
+            {
+              "meta": "Use WEEKENDFEST",
+              "discountType": "Flat",
+              "operationType": "RESTAURANT"
+            }
+          ],
+          "descriptionList": [
+            {
+              "meta": "Flat 125/- off | Use WEEKENDFEST",
+              "discountType": "Flat",
+              "operationType": "RESTAURANT"
+            }
+          ],
+          "subHeader": "",
+          "headerType": 0,
+          "superFreedel": ""
+        },
+        "chain": [
+          
+        ],
+        "feeDetails": {
+          "fees": [
+            {
+              "name": "BASE_DISTANCE",
+              "fee": 3400,
+              "message": ""
+            },
+            {
+              "name": "BASE_TIME",
+              "fee": 0,
+              "message": ""
+            },
+            {
+              "name": "ANCILLARY_SURGE_FEE",
+              "fee": 0,
+              "message": ""
+            }
+          ],
+          "totalFees": 3400,
+          "message": "",
+          "title": "Delivery Charge",
+          "amount": "3400",
+          "icon": ""
+        },
+        "availability": {
+          "opened": true,
+          "nextOpenMessage": "",
+          "nextCloseMessage": ""
+        },
+        "longDistanceEnabled": 0,
+        "rainMode": "NONE",
+        "thirdPartyAddress": false,
+        "thirdPartyVendor": "",
+        "adTrackingID": "cid=6036852~p=7~eid=00000186-cfca-2314-1146-c6b500ec070b~56413",
+        "badges": {
+          "imageBased": [
+            
+          ],
+          "textBased": [
+            
+          ],
+          "textExtendedBadges": [
+            
+          ]
+        },
+        "lastMileTravelString": "5 kms",
+        "hasSurge": false,
+        "cta": {
+          "link": "swiggy://menu?restaurant_id=144183",
+          "type": "DEEPLINK",
+          "text": "RESTAURANT_MENU"
+        },
+        "sla": {
+          "restaurantId": "",
+          "deliveryTime": 49,
+          "minDeliveryTime": 49,
+          "maxDeliveryTime": 49,
+          "lastMileTravel": 0,
+          "lastMileDistance": 5,
+          "serviceability": "SERVICEABLE",
+          "rainMode": "NONE",
+          "preferentialService": false,
+          "iconType": "EMPTY"
+        },
+        "promoted": true,
+        "avgRating": "3.9",
+        "totalRatings": 0,
+        "new": false
+      },
+      "subtype": "basic"
+    },
+    "parentWidget": false
+  },
+  {
+    "cardType": "restaurant",
+    "layoutAlignmentType": "VERTICAL",
+    "data": {
+      "type": "restaurant",
+      "data": {
+        "type": "F",
+        "id": "69107",
+        "name": "Kwik Bite Centre",
+        "uuid": "374eca84-7ea4-49df-bce3-bf455bb520db",
+        "city": "22",
+        "area": "Paltan Bazaar",
+        "totalRatingsString": "",
+        "cloudinaryImageId": "jewu5ej1ur3c3ijdc4hb",
+        "cuisines": [
+          "Indian",
           "South Indian",
-          "North Indian",
+          "Chinese",
+          "Italian"
         ],
-        tags: [],
-        costForTwo: 15000,
-        costForTwoString: "₹150 FOR TWO",
-        deliveryTime: 30,
-        minDeliveryTime: 30,
-        maxDeliveryTime: 30,
-        slaString: "30 MINS",
-        lastMileTravel: 3.799999952316284,
-        slugs: {
-          restaurant: "five-star-janta-ballupur-ballupur",
-          city: "dehradun",
-        },
-        cityState: "22",
-        address: "Opposite IMA Blood Bank, Chakrata Road, Ballupur, Dehradun",
-        locality: "Chakrata Road",
-        parentId: 15743,
-        unserviceable: false,
-        veg: true,
-        select: false,
-        favorite: false,
-        tradeCampaignHeaders: [],
-        aggregatedDiscountInfo: {
-          header: "20% off",
-          shortDescriptionList: [
-            {
-              meta: "20% off | Use TRYNEW",
-              discountType: "Percentage",
-              operationType: "RESTAURANT",
-            },
-          ],
-          descriptionList: [
-            {
-              meta: "20% off up to ₹50 | Use code TRYNEW",
-              discountType: "Percentage",
-              operationType: "RESTAURANT",
-            },
-          ],
-          subHeader: "",
-          headerType: 0,
-          superFreedel: "",
-        },
-        aggregatedDiscountInfoV2: {
-          header: "20% OFF",
-          shortDescriptionList: [
-            {
-              meta: "Use TRYNEW",
-              discountType: "Percentage",
-              operationType: "RESTAURANT",
-            },
-          ],
-          descriptionList: [
-            {
-              meta: "20% off up to ₹50 | Use code TRYNEW",
-              discountType: "Percentage",
-              operationType: "RESTAURANT",
-            },
-          ],
-          subHeader: "",
-          headerType: 0,
-          superFreedel: "",
-        },
-        ribbon: [
-          {
-            type: "PROMOTED",
-          },
+        "tags": [
+          
         ],
-        chain: [],
-        feeDetails: {
-          fees: [],
-          totalFees: 0,
-          message: "",
-          title: "",
-          amount: "",
-          icon: "",
+        "costForTwo": 15000,
+        "costForTwoString": "₹150 FOR TWO",
+        "deliveryTime": 41,
+        "minDeliveryTime": 41,
+        "maxDeliveryTime": 41,
+        "slaString": "41 MINS",
+        "lastMileTravel": 0,
+        "slugs": {
+          "restaurant": "kwik-bite-centre-paltan-bazaar-chukkuwala",
+          "city": "Dehradun"
         },
-        availability: {
-          opened: true,
-          nextOpenMessage: "",
-          nextCloseMessage: "",
-        },
-        longDistanceEnabled: 0,
-        rainMode: "NONE",
-        thirdPartyAddress: false,
-        thirdPartyVendor: "",
-        adTrackingID:
-          "cid=6081417~p=25~eid=00000186-bc07-5cc4-0087-30020081196c",
-        badges: {
-          imageBased: [],
-          textBased: [],
-          textExtendedBadges: [],
-        },
-        lastMileTravelString: "3.7 kms",
-        hasSurge: false,
-        sla: {
-          restaurantId: "74796",
-          deliveryTime: 30,
-          minDeliveryTime: 30,
-          maxDeliveryTime: 30,
-          lastMileTravel: 3.799999952316284,
-          lastMileDistance: 0,
-          serviceability: "SERVICEABLE",
-          rainMode: "NONE",
-          longDistance: "NOT_LONG_DISTANCE",
-          preferentialService: false,
-          iconType: "EMPTY",
-        },
-        promoted: true,
-        avgRating: "4.2",
-        totalRatings: 5000,
-        new: false,
-      },
-      subtype: "basic",
-    },
-    parentWidget: false,
-  },
-  {
-    cardType: "restaurant",
-    layoutAlignmentType: "VERTICAL",
-    data: {
-      type: "restaurant",
-      data: {
-        type: "F",
-        id: "426806",
-        name: "Naaz Darbar",
-        uuid: "005ce694-1caa-43be-8487-13c34641b343",
-        city: "22",
-        area: "Paltan Bazaar",
-        totalRatingsString: "100+ ratings",
-        cloudinaryImageId: "jpn7dhd6sdspmnh8cs69",
-        cuisines: ["Chinese"],
-        tags: [],
-        costForTwo: 28500,
-        costForTwoString: "₹285 FOR TWO",
-        deliveryTime: 29,
-        minDeliveryTime: 29,
-        maxDeliveryTime: 29,
-        slaString: "29 MINS",
-        lastMileTravel: 1,
-        slugs: {
-          restaurant: "naaz-darbar-chukkuwala-chukkuwala",
-          city: "dehradun",
-        },
-        cityState: "22",
-        address:
-          "68, 68, Gandhi Rd, Karanpur, Dehradun, Uttarakhand 248001, India",
-        locality: "Clock Tower",
-        parentId: 237481,
-        unserviceable: false,
-        veg: false,
-        select: false,
-        favorite: false,
-        tradeCampaignHeaders: [],
-        aggregatedDiscountInfo: {
-          header: "10% off",
-          shortDescriptionList: [
-            {
-              meta: "10% off | Use TRYNEW",
-              discountType: "Percentage",
-              operationType: "RESTAURANT",
-            },
-          ],
-          descriptionList: [
-            {
-              meta: "10% off up to ₹40 | Use code TRYNEW",
-              discountType: "Percentage",
-              operationType: "RESTAURANT",
-            },
-          ],
-          subHeader: "",
-          headerType: 0,
-          superFreedel: "",
-        },
-        aggregatedDiscountInfoV2: {
-          header: "10% OFF",
-          shortDescriptionList: [
-            {
-              meta: "Use TRYNEW",
-              discountType: "Percentage",
-              operationType: "RESTAURANT",
-            },
-          ],
-          descriptionList: [
-            {
-              meta: "10% off up to ₹40 | Use code TRYNEW",
-              discountType: "Percentage",
-              operationType: "RESTAURANT",
-            },
-          ],
-          subHeader: "",
-          headerType: 0,
-          superFreedel: "",
-        },
-        chain: [],
-        feeDetails: {
-          fees: [],
-          totalFees: 0,
-          message: "",
-          title: "",
-          amount: "",
-          icon: "",
-        },
-        availability: {
-          opened: true,
-          nextOpenMessage: "",
-          nextCloseMessage: "",
-        },
-        longDistanceEnabled: 0,
-        rainMode: "NONE",
-        thirdPartyAddress: false,
-        thirdPartyVendor: "",
-        adTrackingID: "",
-        badges: {
-          imageBased: [],
-          textBased: [],
-          textExtendedBadges: [],
-        },
-        lastMileTravelString: "1 kms",
-        hasSurge: false,
-        sla: {
-          restaurantId: "426806",
-          deliveryTime: 29,
-          minDeliveryTime: 29,
-          maxDeliveryTime: 29,
-          lastMileTravel: 1,
-          lastMileDistance: 0,
-          serviceability: "SERVICEABLE",
-          rainMode: "NONE",
-          longDistance: "NOT_LONG_DISTANCE",
-          preferentialService: false,
-          iconType: "EMPTY",
-        },
-        promoted: false,
-        avgRating: "3.3",
-        totalRatings: 100,
-        new: false,
-      },
-      subtype: "basic",
-    },
-    parentWidget: false,
-  },
-  {
-    cardType: "restaurant",
-    layoutAlignmentType: "VERTICAL",
-    data: {
-      type: "restaurant",
-      data: {
-        type: "F",
-        id: "84218",
-        name: "Globe Bakers",
-        uuid: "bd3c97d4-e5ad-4961-8a86-3444a3ea7540",
-        city: "22",
-        area: "Race Course",
-        totalRatingsString: "100+ ratings",
-        cloudinaryImageId: "fip5x6w4ops3syyxrnhz",
-        cuisines: ["Bakery"],
-        tags: [],
-        costForTwo: 15000,
-        costForTwoString: "₹150 FOR TWO",
-        deliveryTime: 30,
-        minDeliveryTime: 30,
-        maxDeliveryTime: 30,
-        slaString: "30 MINS",
-        lastMileTravel: 0.4000000059604645,
-        slugs: {
-          restaurant: "globe-bakers-race-course-race-course-dehradun",
-          city: "dehradun",
-        },
-        cityState: "22",
-        address: "Darshini Gate, Race Course, Dehradun",
-        locality: "Darshani Gate",
-        parentId: 15666,
-        unserviceable: false,
-        veg: false,
-        select: false,
-        favorite: false,
-        tradeCampaignHeaders: [],
-        aggregatedDiscountInfo: {
-          header: "FREE DELIVERY",
-          shortDescriptionList: [
-            {
-              meta: "FREE DELIVERY",
-              discountType: "FREE_DELIVERY",
-              operationType: "RESTAURANT",
-            },
-          ],
-          descriptionList: [
-            {
-              meta: "FREE DELIVERY",
-              discountType: "FREE_DELIVERY",
-              operationType: "RESTAURANT",
-            },
-          ],
-          subHeader: "",
-          headerType: 0,
-          superFreedel: "",
-        },
-        aggregatedDiscountInfoV2: {
-          header: "",
-          shortDescriptionList: [
-            {
-              meta: "Free Delivery",
-              discountType: "FREE_DELIVERY",
-              operationType: "RESTAURANT",
-            },
-          ],
-          descriptionList: [
-            {
-              meta: "FREE DELIVERY",
-              discountType: "FREE_DELIVERY",
-              operationType: "RESTAURANT",
-            },
-          ],
-          subHeader: "",
-          headerType: 0,
-          superFreedel: "",
-        },
-        chain: [],
-        feeDetails: {
-          fees: [],
-          totalFees: 0,
-          message: "",
-          title: "",
-          amount: "",
-          icon: "",
-        },
-        availability: {
-          opened: true,
-          nextOpenMessage: "",
-          nextCloseMessage: "",
-        },
-        longDistanceEnabled: 0,
-        rainMode: "NONE",
-        thirdPartyAddress: false,
-        thirdPartyVendor: "",
-        adTrackingID: "",
-        badges: {
-          imageBased: [],
-          textBased: [],
-          textExtendedBadges: [],
-        },
-        lastMileTravelString: "0.4 kms",
-        hasSurge: false,
-        sla: {
-          restaurantId: "84218",
-          deliveryTime: 30,
-          minDeliveryTime: 30,
-          maxDeliveryTime: 30,
-          lastMileTravel: 0.4000000059604645,
-          lastMileDistance: 0,
-          serviceability: "SERVICEABLE",
-          rainMode: "NONE",
-          longDistance: "NOT_LONG_DISTANCE",
-          preferentialService: false,
-          iconType: "EMPTY",
-        },
-        promoted: false,
-        avgRating: "4.5",
-        totalRatings: 100,
-        new: false,
-      },
-      subtype: "basic",
-    },
-    parentWidget: false,
-  },
-  {
-    cardType: "restaurant",
-    layoutAlignmentType: "VERTICAL",
-    data: {
-      type: "restaurant",
-      data: {
-        type: "F",
-        id: "78098",
-        name: "Hot Drive Angithi (By Fateh)",
-        uuid: "e7d356c1-cb43-443c-a47f-2b52d105b1fc",
-        city: "22",
-        area: "Dharampur",
-        totalRatingsString: "1000+ ratings",
-        cloudinaryImageId: "n4bioigyootzjgccf5gc",
-        cuisines: ["Chinese", "Tandoor"],
-        tags: [],
-        costForTwo: 20000,
-        costForTwoString: "₹200 FOR TWO",
-        deliveryTime: 35,
-        minDeliveryTime: 35,
-        maxDeliveryTime: 35,
-        slaString: "35 MINS",
-        lastMileTravel: 3,
-        slugs: {
-          restaurant: "hot-drive-anghithi-dharampur-dharampur",
-          city: "dehradun",
-        },
-        cityState: "22",
-        address:
-          "29, Laxmi Rd, Opp HDFC Bank, Nehru Colony, Dharampur, Dehradun, Uttarakhand 248001",
-        locality: "Old Nehru Colony",
-        parentId: 97287,
-        unserviceable: false,
-        veg: false,
-        select: false,
-        favorite: false,
-        tradeCampaignHeaders: [],
-        aggregatedDiscountInfo: {
-          header: "60% off",
-          shortDescriptionList: [
-            {
-              meta: "60% off | Use TRYNEW",
-              discountType: "Percentage",
-              operationType: "RESTAURANT",
-            },
-          ],
-          descriptionList: [
-            {
-              meta: "60% off up to ₹120 | Use code TRYNEW",
-              discountType: "Percentage",
-              operationType: "RESTAURANT",
-            },
-          ],
-          subHeader: "",
-          headerType: 0,
-          superFreedel: "",
-        },
-        aggregatedDiscountInfoV2: {
-          header: "60% OFF",
-          shortDescriptionList: [
-            {
-              meta: "Use TRYNEW",
-              discountType: "Percentage",
-              operationType: "RESTAURANT",
-            },
-          ],
-          descriptionList: [
-            {
-              meta: "60% off up to ₹120 | Use code TRYNEW",
-              discountType: "Percentage",
-              operationType: "RESTAURANT",
-            },
-          ],
-          subHeader: "",
-          headerType: 0,
-          superFreedel: "",
-        },
-        ribbon: [
-          {
-            type: "PROMOTED",
-          },
+        "cityState": "22",
+        "address": "",
+        "locality": "Gandhi Road",
+        "parentId": 15808,
+        "unserviceable": false,
+        "veg": false,
+        "select": false,
+        "favorite": false,
+        "tradeCampaignHeaders": [
+          
         ],
-        chain: [],
-        feeDetails: {
-          fees: [],
-          totalFees: 0,
-          message: "",
-          title: "",
-          amount: "",
-          icon: "",
-        },
-        availability: {
-          opened: true,
-          nextOpenMessage: "",
-          nextCloseMessage: "",
-        },
-        longDistanceEnabled: 0,
-        rainMode: "NONE",
-        thirdPartyAddress: false,
-        thirdPartyVendor: "",
-        adTrackingID:
-          "cid=6064088~p=28~eid=00000186-bc07-5cc4-0087-300300811c35",
-        badges: {
-          imageBased: [],
-          textBased: [],
-          textExtendedBadges: [],
-        },
-        lastMileTravelString: "3 kms",
-        hasSurge: false,
-        sla: {
-          restaurantId: "78098",
-          deliveryTime: 35,
-          minDeliveryTime: 35,
-          maxDeliveryTime: 35,
-          lastMileTravel: 3,
-          lastMileDistance: 0,
-          serviceability: "SERVICEABLE",
-          rainMode: "NONE",
-          longDistance: "NOT_LONG_DISTANCE",
-          preferentialService: false,
-          iconType: "EMPTY",
-        },
-        promoted: true,
-        avgRating: "3.7",
-        totalRatings: 1000,
-        new: false,
-      },
-      subtype: "basic",
-    },
-    parentWidget: false,
-  },
-  {
-    cardType: "restaurant",
-    layoutAlignmentType: "VERTICAL",
-    data: {
-      type: "restaurant",
-      data: {
-        type: "F",
-        id: "520124",
-        name: "Giani Ice Cream",
-        uuid: "2aba7a16-0671-4d18-86e1-89c554dcc3ae",
-        city: "22",
-        area: "Race Course",
-        totalRatingsString: "100+ ratings",
-        cloudinaryImageId: "lues4tidh4j3nqukphqe",
-        cuisines: ["Ice Cream", "Beverages"],
-        tags: [],
-        costForTwo: 30000,
-        costForTwoString: "₹300 FOR TWO",
-        deliveryTime: 26,
-        minDeliveryTime: 26,
-        maxDeliveryTime: 26,
-        slaString: "26 MINS",
-        lastMileTravel: 0.699999988079071,
-        slugs: {
-          restaurant: "giani-chukkuwala-chukkuwala",
-          city: "dehradun",
-        },
-        cityState: "22",
-        address: "10/3 Tyagi Road, Rest Camp, Dehradun.248001",
-        locality: "Tyagi Road",
-        parentId: 6577,
-        unserviceable: false,
-        veg: true,
-        select: false,
-        favorite: false,
-        tradeCampaignHeaders: [],
-        aggregatedDiscountInfo: {
-          header: "FREE DELIVERY",
-          shortDescriptionList: [
+        "aggregatedDiscountInfo": {
+          "header": "40% off",
+          "shortDescriptionList": [
             {
-              meta: "FREE DELIVERY",
-              discountType: "FREE_DELIVERY",
-              operationType: "RESTAURANT",
-            },
+              "meta": "40% off | Use TRYNEW",
+              "discountType": "Percentage",
+              "operationType": "RESTAURANT"
+            }
           ],
-          descriptionList: [
+          "descriptionList": [
             {
-              meta: "FREE DELIVERY",
-              discountType: "FREE_DELIVERY",
-              operationType: "RESTAURANT",
-            },
+              "meta": "40% off up to ₹80 | Use code TRYNEW",
+              "discountType": "Percentage",
+              "operationType": "RESTAURANT"
+            }
           ],
-          subHeader: "",
-          headerType: 0,
-          superFreedel: "",
+          "subHeader": "",
+          "headerType": 0,
+          "superFreedel": ""
         },
-        aggregatedDiscountInfoV2: {
-          header: "",
-          shortDescriptionList: [
+        "aggregatedDiscountInfoV2": {
+          "header": "40% OFF",
+          "shortDescriptionList": [
             {
-              meta: "Free Delivery",
-              discountType: "FREE_DELIVERY",
-              operationType: "RESTAURANT",
-            },
+              "meta": "Use TRYNEW",
+              "discountType": "Percentage",
+              "operationType": "RESTAURANT"
+            }
           ],
-          descriptionList: [
+          "descriptionList": [
             {
-              meta: "FREE DELIVERY",
-              discountType: "FREE_DELIVERY",
-              operationType: "RESTAURANT",
-            },
+              "meta": "40% off up to ₹80 | Use code TRYNEW",
+              "discountType": "Percentage",
+              "operationType": "RESTAURANT"
+            }
           ],
-          subHeader: "",
-          headerType: 0,
-          superFreedel: "",
+          "subHeader": "",
+          "headerType": 0,
+          "superFreedel": ""
         },
-        chain: [],
-        feeDetails: {
-          fees: [],
-          totalFees: 0,
-          message: "",
-          title: "",
-          amount: "",
-          icon: "",
-        },
-        availability: {
-          opened: true,
-          nextOpenMessage: "",
-          nextCloseMessage: "",
-        },
-        longDistanceEnabled: 0,
-        rainMode: "NONE",
-        thirdPartyAddress: false,
-        thirdPartyVendor: "",
-        adTrackingID: "",
-        badges: {
-          imageBased: [],
-          textBased: [],
-          textExtendedBadges: [],
-        },
-        lastMileTravelString: "0.6 kms",
-        hasSurge: false,
-        sla: {
-          restaurantId: "520124",
-          deliveryTime: 26,
-          minDeliveryTime: 26,
-          maxDeliveryTime: 26,
-          lastMileTravel: 0.699999988079071,
-          lastMileDistance: 0,
-          serviceability: "SERVICEABLE",
-          rainMode: "NONE",
-          longDistance: "NOT_LONG_DISTANCE",
-          preferentialService: false,
-          iconType: "EMPTY",
-        },
-        promoted: false,
-        avgRating: "4.4",
-        totalRatings: 100,
-        new: false,
-      },
-      subtype: "basic",
-    },
-    parentWidget: false,
-  },
-  {
-    cardType: "restaurant",
-    layoutAlignmentType: "VERTICAL",
-    data: {
-      type: "restaurant",
-      data: {
-        type: "F",
-        id: "192113",
-        name: "Matta Restaurant",
-        uuid: "fd2245c8-ba9b-4146-9702-f1e88c7bb53a",
-        city: "22",
-        area: "Paltan Bazaar",
-        totalRatingsString: "1000+ ratings",
-        cloudinaryImageId: "py03v73spacgkmoy4rk9",
-        cuisines: ["Chinese", "North Indian", "Snacks"],
-        tags: [],
-        costForTwo: 10000,
-        costForTwoString: "₹100 FOR TWO",
-        deliveryTime: 28,
-        minDeliveryTime: 28,
-        maxDeliveryTime: 28,
-        slaString: "28 MINS",
-        lastMileTravel: 1,
-        slugs: {
-          restaurant: "matta-restaurant-patel-nagar-patel-nagar",
-          city: "dehradun",
-        },
-        cityState: "22",
-        address:
-          "72, Saharanpur Rd, Saharanpur Chowk, Arhat Bazaar, Laxman Chowk, Dehradun, Uttarakhand 248001, India",
-        locality: "Saharanpur Road",
-        parentId: 133630,
-        unserviceable: false,
-        veg: true,
-        select: false,
-        favorite: false,
-        tradeCampaignHeaders: [],
-        aggregatedDiscountInfo: {
-          header: "60% off",
-          shortDescriptionList: [
-            {
-              meta: "60% off | Use TRYNEW",
-              discountType: "Percentage",
-              operationType: "RESTAURANT",
-            },
-          ],
-          descriptionList: [
-            {
-              meta: "60% off up to ₹120 | Use code TRYNEW",
-              discountType: "Percentage",
-              operationType: "RESTAURANT",
-            },
-          ],
-          subHeader: "",
-          headerType: 0,
-          superFreedel: "",
-        },
-        aggregatedDiscountInfoV2: {
-          header: "60% OFF",
-          shortDescriptionList: [
-            {
-              meta: "Use TRYNEW",
-              discountType: "Percentage",
-              operationType: "RESTAURANT",
-            },
-          ],
-          descriptionList: [
-            {
-              meta: "60% off up to ₹120 | Use code TRYNEW",
-              discountType: "Percentage",
-              operationType: "RESTAURANT",
-            },
-          ],
-          subHeader: "",
-          headerType: 0,
-          superFreedel: "",
-        },
-        chain: [],
-        feeDetails: {
-          fees: [],
-          totalFees: 0,
-          message: "",
-          title: "",
-          amount: "",
-          icon: "",
-        },
-        availability: {
-          opened: true,
-          nextOpenMessage: "",
-          nextCloseMessage: "",
-        },
-        longDistanceEnabled: 0,
-        rainMode: "NONE",
-        thirdPartyAddress: false,
-        thirdPartyVendor: "",
-        adTrackingID: "",
-        badges: {
-          imageBased: [],
-          textBased: [],
-          textExtendedBadges: [],
-        },
-        lastMileTravelString: "1 kms",
-        hasSurge: false,
-        sla: {
-          restaurantId: "192113",
-          deliveryTime: 28,
-          minDeliveryTime: 28,
-          maxDeliveryTime: 28,
-          lastMileTravel: 1,
-          lastMileDistance: 0,
-          serviceability: "SERVICEABLE",
-          rainMode: "NONE",
-          longDistance: "NOT_LONG_DISTANCE",
-          preferentialService: false,
-          iconType: "EMPTY",
-        },
-        promoted: false,
-        avgRating: "3.6",
-        totalRatings: 1000,
-        new: false,
-      },
-      subtype: "basic",
-    },
-    parentWidget: false,
-  },
-  {
-    cardType: "restaurant",
-    layoutAlignmentType: "VERTICAL",
-    data: {
-      type: "restaurant",
-      data: {
-        type: "F",
-        id: "452768",
-        name: "Badmaash Kebabi (EC Road)",
-        uuid: "838fee30-8fbb-498c-bad3-be334c27673a",
-        city: "22",
-        area: "Karanpur",
-        totalRatingsString: "500+ ratings",
-        cloudinaryImageId: "n8ktamvgr8jpbd5fkc7x",
-        cuisines: ["Lucknowi", "Awadhi", "Kebabs"],
-        tags: [],
-        costForTwo: 30000,
-        costForTwoString: "₹300 FOR TWO",
-        deliveryTime: 33,
-        minDeliveryTime: 33,
-        maxDeliveryTime: 33,
-        slaString: "33 MINS",
-        lastMileTravel: 2.9000000953674316,
-        slugs: {
-          restaurant: "badmaash-kebabi-hathibarkala-hathibarkala",
-          city: "dehradun",
-        },
-        cityState: "22",
-        address: "Plot No. 19/1 , E.C Road,Dehradun 248001",
-        locality: "EC Road",
-        parentId: 372078,
-        unserviceable: false,
-        veg: false,
-        select: false,
-        favorite: false,
-        tradeCampaignHeaders: [],
-        aggregatedDiscountInfo: {
-          header: "FREE DELIVERY",
-          shortDescriptionList: [
-            {
-              meta: "FREE DELIVERY",
-              discountType: "FREE_DELIVERY",
-              operationType: "RESTAURANT",
-            },
-          ],
-          descriptionList: [
-            {
-              meta: "FREE DELIVERY",
-              discountType: "FREE_DELIVERY",
-              operationType: "RESTAURANT",
-            },
-          ],
-          subHeader: "",
-          headerType: 0,
-          superFreedel: "",
-        },
-        aggregatedDiscountInfoV2: {
-          header: "",
-          shortDescriptionList: [
-            {
-              meta: "Free Delivery",
-              discountType: "FREE_DELIVERY",
-              operationType: "RESTAURANT",
-            },
-          ],
-          descriptionList: [
-            {
-              meta: "FREE DELIVERY",
-              discountType: "FREE_DELIVERY",
-              operationType: "RESTAURANT",
-            },
-          ],
-          subHeader: "",
-          headerType: 0,
-          superFreedel: "",
-        },
-        ribbon: [
-          {
-            type: "PROMOTED",
-          },
+        "chain": [
+          
         ],
-        chain: [],
-        feeDetails: {
-          fees: [],
-          totalFees: 0,
-          message: "",
-          title: "",
-          amount: "",
-          icon: "",
+        "feeDetails": {
+          "fees": [
+            {
+              "name": "BASE_DISTANCE",
+              "fee": 1900,
+              "message": ""
+            },
+            {
+              "name": "BASE_TIME",
+              "fee": 0,
+              "message": ""
+            },
+            {
+              "name": "ANCILLARY_SURGE_FEE",
+              "fee": 0,
+              "message": ""
+            }
+          ],
+          "totalFees": 1900,
+          "message": "",
+          "title": "Delivery Charge",
+          "amount": "1900",
+          "icon": ""
         },
-        availability: {
-          opened: true,
-          nextOpenMessage: "",
-          nextCloseMessage: "",
+        "availability": {
+          "opened": true,
+          "nextOpenMessage": "",
+          "nextCloseMessage": ""
         },
-        longDistanceEnabled: 0,
-        rainMode: "NONE",
-        thirdPartyAddress: false,
-        thirdPartyVendor: "",
-        adTrackingID:
-          "cid=6082484~p=31~eid=00000186-bc07-5cc4-0087-300400811f4b",
-        badges: {
-          imageBased: [],
-          textBased: [],
-          textExtendedBadges: [],
+        "longDistanceEnabled": 0,
+        "rainMode": "NONE",
+        "thirdPartyAddress": false,
+        "thirdPartyVendor": "",
+        "adTrackingID": "",
+        "badges": {
+          "imageBased": [
+            
+          ],
+          "textBased": [
+            
+          ],
+          "textExtendedBadges": [
+            
+          ]
         },
-        lastMileTravelString: "2.9 kms",
-        hasSurge: false,
-        sla: {
-          restaurantId: "452768",
-          deliveryTime: 33,
-          minDeliveryTime: 33,
-          maxDeliveryTime: 33,
-          lastMileTravel: 2.9000000953674316,
-          lastMileDistance: 0,
-          serviceability: "SERVICEABLE",
-          rainMode: "NONE",
-          longDistance: "NOT_LONG_DISTANCE",
-          preferentialService: false,
-          iconType: "EMPTY",
+        "lastMileTravelString": "1.5 kms",
+        "hasSurge": false,
+        "cta": {
+          "link": "swiggy://menu?restaurant_id=69107",
+          "type": "DEEPLINK",
+          "text": "RESTAURANT_MENU"
         },
-        promoted: true,
-        avgRating: "3.9",
-        totalRatings: 500,
-        new: false,
+        "sla": {
+          "restaurantId": "",
+          "deliveryTime": 41,
+          "minDeliveryTime": 41,
+          "maxDeliveryTime": 41,
+          "lastMileTravel": 0,
+          "lastMileDistance": 1.5,
+          "serviceability": "SERVICEABLE",
+          "rainMode": "NONE",
+          "preferentialService": false,
+          "iconType": "EMPTY"
+        },
+        "promoted": false,
+        "avgRating": "3.9",
+        "totalRatings": 0,
+        "new": false
       },
-      subtype: "basic",
+      "subtype": "basic"
     },
-    parentWidget: false,
+    "parentWidget": false
   },
   {
-    cardType: "restaurant",
-    layoutAlignmentType: "VERTICAL",
-    data: {
-      type: "restaurant",
-      data: {
-        type: "F",
-        id: "674050",
-        name: "Paratha junction",
-        uuid: "787e9891-7fed-453b-b95d-65a713afb31b",
-        city: "22",
-        area: "Chukkuwala",
-        totalRatingsString: "Too Few Ratings",
-        cloudinaryImageId: "b97c00b9a3861b92396cbbdf05316e86",
-        cuisines: ["Indian", "Sweets", "Beverages"],
-        tags: [],
-        costForTwo: 20000,
-        costForTwoString: "₹200 FOR TWO",
-        deliveryTime: 40,
-        minDeliveryTime: 40,
-        maxDeliveryTime: 40,
-        slaString: "40 MINS",
-        lastMileTravel: 0.5,
-        slugs: {
-          restaurant: "paratha-junction-chukkuwala-chukkuwala",
-          city: "dehradun",
+    "cardType": "restaurant",
+    "layoutAlignmentType": "VERTICAL",
+    "data": {
+      "type": "restaurant",
+      "data": {
+        "type": "F",
+        "id": "68757",
+        "name": "Chicago Pizza",
+        "uuid": "b28e3fcd-dac1-47a3-bfb7-d527a8aa0105",
+        "city": "22",
+        "area": "Hathibarkala Salwala",
+        "totalRatingsString": "",
+        "cloudinaryImageId": "aqrldzt9wwhjprgcixyw",
+        "cuisines": [
+          "Pizzas",
+          "Italian"
+        ],
+        "tags": [
+          
+        ],
+        "costForTwo": 50000,
+        "costForTwoString": "₹500 FOR TWO",
+        "deliveryTime": 45,
+        "minDeliveryTime": 45,
+        "maxDeliveryTime": 45,
+        "slaString": "45 MINS",
+        "lastMileTravel": 0,
+        "slugs": {
+          "restaurant": "chicago-pizza-hathibarkala-salwala-hathibarkala",
+          "city": "Dehradun"
         },
-        cityState: "22",
-        address: "828H+9X4, Lakkhi Bagh, Dehradun, Uttarakhand 248001, India",
-        locality: "Lakkhi Bagh",
-        parentId: 3467,
-        unserviceable: false,
-        veg: false,
-        select: false,
-        favorite: false,
-        tradeCampaignHeaders: [],
-        aggregatedDiscountInfo: {
-          header: "30% off",
-          shortDescriptionList: [
+        "cityState": "22",
+        "address": "",
+        "locality": "Silvercity Mall",
+        "parentId": 60277,
+        "unserviceable": false,
+        "veg": false,
+        "select": false,
+        "favorite": false,
+        "tradeCampaignHeaders": [
+          
+        ],
+        "aggregatedDiscountInfo": {
+          "header": "FREE DELIVERY",
+          "shortDescriptionList": [
             {
-              meta: "30% off | Use TRYNEW",
-              discountType: "Percentage",
-              operationType: "RESTAURANT",
-            },
+              "meta": "FREE DELIVERY",
+              "discountType": "FREE_DELIVERY",
+              "operationType": "RESTAURANT"
+            }
           ],
-          descriptionList: [
+          "descriptionList": [
             {
-              meta: "30% off up to ₹75 | Use code TRYNEW",
-              discountType: "Percentage",
-              operationType: "RESTAURANT",
-            },
+              "meta": "FREE DELIVERY",
+              "discountType": "FREE_DELIVERY",
+              "operationType": "RESTAURANT"
+            }
           ],
-          subHeader: "",
-          headerType: 0,
-          superFreedel: "",
+          "subHeader": "",
+          "headerType": 0,
+          "superFreedel": ""
         },
-        aggregatedDiscountInfoV2: {
-          header: "30% OFF",
-          shortDescriptionList: [
+        "aggregatedDiscountInfoV2": {
+          "header": "",
+          "shortDescriptionList": [
             {
-              meta: "Use TRYNEW",
-              discountType: "Percentage",
-              operationType: "RESTAURANT",
-            },
+              "meta": "Free Delivery",
+              "discountType": "FREE_DELIVERY",
+              "operationType": "RESTAURANT"
+            }
           ],
-          descriptionList: [
+          "descriptionList": [
             {
-              meta: "30% off up to ₹75 | Use code TRYNEW",
-              discountType: "Percentage",
-              operationType: "RESTAURANT",
-            },
+              "meta": "FREE DELIVERY",
+              "discountType": "FREE_DELIVERY",
+              "operationType": "RESTAURANT"
+            }
           ],
-          subHeader: "",
-          headerType: 0,
-          superFreedel: "",
+          "subHeader": "",
+          "headerType": 0,
+          "superFreedel": ""
         },
-        chain: [],
-        feeDetails: {
-          fees: [],
-          totalFees: 0,
-          message: "",
-          title: "",
-          amount: "",
-          icon: "",
+        "chain": [
+          
+        ],
+        "feeDetails": {
+          "fees": [
+            {
+              "name": "BASE_DISTANCE",
+              "fee": 2400,
+              "message": ""
+            },
+            {
+              "name": "BASE_TIME",
+              "fee": 0,
+              "message": ""
+            },
+            {
+              "name": "ANCILLARY_SURGE_FEE",
+              "fee": 0,
+              "message": ""
+            }
+          ],
+          "totalFees": 2400,
+          "message": "",
+          "title": "Delivery Charge",
+          "amount": "2400",
+          "icon": ""
         },
-        availability: {
-          opened: true,
-          nextOpenMessage: "",
-          nextCloseMessage: "",
+        "availability": {
+          "opened": true,
+          "nextOpenMessage": "",
+          "nextCloseMessage": ""
         },
-        longDistanceEnabled: 0,
-        rainMode: "NONE",
-        thirdPartyAddress: false,
-        thirdPartyVendor: "",
-        adTrackingID: "",
-        badges: {
-          imageBased: [],
-          textBased: [],
-          textExtendedBadges: [],
+        "longDistanceEnabled": 0,
+        "rainMode": "NONE",
+        "thirdPartyAddress": false,
+        "thirdPartyVendor": "",
+        "adTrackingID": "",
+        "badges": {
+          "imageBased": [
+            
+          ],
+          "textBased": [
+            
+          ],
+          "textExtendedBadges": [
+            
+          ]
         },
-        lastMileTravelString: "0.5 kms",
-        hasSurge: false,
-        sla: {
-          restaurantId: "674050",
-          deliveryTime: 40,
-          minDeliveryTime: 40,
-          maxDeliveryTime: 40,
-          lastMileTravel: 0.5,
-          lastMileDistance: 0,
-          serviceability: "SERVICEABLE",
-          rainMode: "NONE",
-          longDistance: "NOT_LONG_DISTANCE",
-          preferentialService: false,
-          iconType: "EMPTY",
+        "lastMileTravelString": "4.9 kms",
+        "hasSurge": false,
+        "cta": {
+          "link": "swiggy://menu?restaurant_id=68757",
+          "type": "DEEPLINK",
+          "text": "RESTAURANT_MENU"
         },
-        promoted: false,
-        avgRating: "--",
-        totalRatings: 0,
-        new: true,
+        "sla": {
+          "restaurantId": "",
+          "deliveryTime": 45,
+          "minDeliveryTime": 45,
+          "maxDeliveryTime": 45,
+          "lastMileTravel": 0,
+          "lastMileDistance": 4.9,
+          "serviceability": "SERVICEABLE",
+          "rainMode": "NONE",
+          "preferentialService": false,
+          "iconType": "EMPTY"
+        },
+        "promoted": false,
+        "avgRating": "2.7",
+        "totalRatings": 0,
+        "new": false
       },
-      subtype: "basic",
+      "subtype": "basic"
     },
-    parentWidget: false,
+    "parentWidget": false
   },
-];
+  {
+    "cardType": "restaurant",
+    "layoutAlignmentType": "VERTICAL",
+    "data": {
+      "type": "restaurant",
+      "data": {
+        "type": "F",
+        "id": "231542",
+        "name": "Tasty Bite Pizza",
+        "uuid": "21c2bc6b-add7-4296-86e0-c46741b434b4",
+        "city": "22",
+        "area": "Race Course",
+        "totalRatingsString": "",
+        "cloudinaryImageId": "sjkuwjlkpnfp9spy0hjq",
+        "cuisines": [
+          "Italian",
+          "Pizzas"
+        ],
+        "tags": [
+          
+        ],
+        "costForTwo": 25000,
+        "costForTwoString": "₹250 FOR TWO",
+        "deliveryTime": 38,
+        "minDeliveryTime": 38,
+        "maxDeliveryTime": 38,
+        "slaString": "38 MINS",
+        "lastMileTravel": 0,
+        "slugs": {
+          "restaurant": "tasty-bite-pizza-patel-nagar-patel-nagar",
+          "city": "Dehradun"
+        },
+        "cityState": "22",
+        "address": "",
+        "locality": "Haridwar Road",
+        "parentId": 14765,
+        "unserviceable": false,
+        "veg": false,
+        "select": false,
+        "favorite": false,
+        "tradeCampaignHeaders": [
+          
+        ],
+        "aggregatedDiscountInfo": {
+          "header": "30% off",
+          "shortDescriptionList": [
+            {
+              "meta": "30% off | Use TRYNEW",
+              "discountType": "Percentage",
+              "operationType": "RESTAURANT"
+            }
+          ],
+          "descriptionList": [
+            {
+              "meta": "30% off up to ₹75 | Use code TRYNEW",
+              "discountType": "Percentage",
+              "operationType": "RESTAURANT"
+            }
+          ],
+          "subHeader": "",
+          "headerType": 0,
+          "superFreedel": ""
+        },
+        "aggregatedDiscountInfoV2": {
+          "header": "30% OFF",
+          "shortDescriptionList": [
+            {
+              "meta": "Use TRYNEW",
+              "discountType": "Percentage",
+              "operationType": "RESTAURANT"
+            }
+          ],
+          "descriptionList": [
+            {
+              "meta": "30% off up to ₹75 | Use code TRYNEW",
+              "discountType": "Percentage",
+              "operationType": "RESTAURANT"
+            }
+          ],
+          "subHeader": "",
+          "headerType": 0,
+          "superFreedel": ""
+        },
+        "chain": [
+          
+        ],
+        "feeDetails": {
+          "fees": [
+            {
+              "name": "BASE_DISTANCE",
+              "fee": 1900,
+              "message": ""
+            },
+            {
+              "name": "BASE_TIME",
+              "fee": 0,
+              "message": ""
+            },
+            {
+              "name": "ANCILLARY_SURGE_FEE",
+              "fee": 0,
+              "message": ""
+            }
+          ],
+          "totalFees": 1900,
+          "message": "",
+          "title": "Delivery Charge",
+          "amount": "1900",
+          "icon": ""
+        },
+        "availability": {
+          "opened": true,
+          "nextOpenMessage": "",
+          "nextCloseMessage": ""
+        },
+        "longDistanceEnabled": 0,
+        "rainMode": "NONE",
+        "thirdPartyAddress": false,
+        "thirdPartyVendor": "",
+        "adTrackingID": "cid=6046437~p=8~eid=00000186-cfca-2314-1146-c6b600ec0823~56413",
+        "badges": {
+          "imageBased": [
+            
+          ],
+          "textBased": [
+            
+          ],
+          "textExtendedBadges": [
+            
+          ]
+        },
+        "lastMileTravelString": "2.5 kms",
+        "hasSurge": false,
+        "cta": {
+          "link": "swiggy://menu?restaurant_id=231542",
+          "type": "DEEPLINK",
+          "text": "RESTAURANT_MENU"
+        },
+        "sla": {
+          "restaurantId": "",
+          "deliveryTime": 38,
+          "minDeliveryTime": 38,
+          "maxDeliveryTime": 38,
+          "lastMileTravel": 0,
+          "lastMileDistance": 2.5,
+          "serviceability": "SERVICEABLE",
+          "rainMode": "NONE",
+          "preferentialService": false,
+          "iconType": "EMPTY"
+        },
+        "promoted": true,
+        "avgRating": "3.7",
+        "totalRatings": 0,
+        "new": false
+      },
+      "subtype": "basic"
+    },
+    "parentWidget": false
+  },
+  {
+    "cardType": "restaurant",
+    "layoutAlignmentType": "VERTICAL",
+    "data": {
+      "type": "restaurant",
+      "data": {
+        "type": "F",
+        "id": "143893",
+        "name": "Laziz Pizza",
+        "uuid": "a84e4a07-b0de-4b24-bfa7-818ffba9d7d0",
+        "city": "22",
+        "area": "Morowala",
+        "totalRatingsString": "",
+        "cloudinaryImageId": "m3522opzqwu9pcsybnjo",
+        "cuisines": [
+          "Italian"
+        ],
+        "tags": [
+          
+        ],
+        "costForTwo": 25000,
+        "costForTwoString": "₹250 FOR TWO",
+        "deliveryTime": 40,
+        "minDeliveryTime": 40,
+        "maxDeliveryTime": 40,
+        "slaString": "40 MINS",
+        "lastMileTravel": 0,
+        "slugs": {
+          "restaurant": "laziz-pizza-na-subhash-nagar",
+          "city": "Dehradun"
+        },
+        "cityState": "22",
+        "address": "",
+        "locality": "City Junction Mall",
+        "parentId": 2299,
+        "unserviceable": false,
+        "veg": false,
+        "select": false,
+        "favorite": false,
+        "tradeCampaignHeaders": [
+          
+        ],
+        "aggregatedDiscountInfo": {
+          "header": "FREE DELIVERY",
+          "shortDescriptionList": [
+            {
+              "meta": "FREE DELIVERY",
+              "discountType": "FREE_DELIVERY",
+              "operationType": "RESTAURANT"
+            }
+          ],
+          "descriptionList": [
+            {
+              "meta": "FREE DELIVERY",
+              "discountType": "FREE_DELIVERY",
+              "operationType": "RESTAURANT"
+            }
+          ],
+          "subHeader": "",
+          "headerType": 0,
+          "superFreedel": ""
+        },
+        "aggregatedDiscountInfoV2": {
+          "header": "",
+          "shortDescriptionList": [
+            {
+              "meta": "Free Delivery",
+              "discountType": "FREE_DELIVERY",
+              "operationType": "RESTAURANT"
+            }
+          ],
+          "descriptionList": [
+            {
+              "meta": "FREE DELIVERY",
+              "discountType": "FREE_DELIVERY",
+              "operationType": "RESTAURANT"
+            }
+          ],
+          "subHeader": "",
+          "headerType": 0,
+          "superFreedel": ""
+        },
+        "chain": [
+          
+        ],
+        "feeDetails": {
+          "fees": [
+            {
+              "name": "BASE_DISTANCE",
+              "fee": 3400,
+              "message": ""
+            },
+            {
+              "name": "BASE_TIME",
+              "fee": 0,
+              "message": ""
+            },
+            {
+              "name": "ANCILLARY_SURGE_FEE",
+              "fee": 0,
+              "message": ""
+            }
+          ],
+          "totalFees": 3400,
+          "message": "",
+          "title": "Delivery Charge",
+          "amount": "3400",
+          "icon": ""
+        },
+        "availability": {
+          "opened": true,
+          "nextOpenMessage": "",
+          "nextCloseMessage": ""
+        },
+        "longDistanceEnabled": 0,
+        "rainMode": "NONE",
+        "thirdPartyAddress": false,
+        "thirdPartyVendor": "",
+        "adTrackingID": "",
+        "badges": {
+          "imageBased": [
+            
+          ],
+          "textBased": [
+            
+          ],
+          "textExtendedBadges": [
+            
+          ]
+        },
+        "lastMileTravelString": "5 kms",
+        "hasSurge": false,
+        "cta": {
+          "link": "swiggy://menu?restaurant_id=143893",
+          "type": "DEEPLINK",
+          "text": "RESTAURANT_MENU"
+        },
+        "sla": {
+          "restaurantId": "",
+          "deliveryTime": 40,
+          "minDeliveryTime": 40,
+          "maxDeliveryTime": 40,
+          "lastMileTravel": 0,
+          "lastMileDistance": 5,
+          "serviceability": "SERVICEABLE",
+          "rainMode": "NONE",
+          "preferentialService": false,
+          "iconType": "EMPTY"
+        },
+        "promoted": false,
+        "avgRating": "2.1",
+        "totalRatings": 0,
+        "new": false
+      },
+      "subtype": "basic"
+    },
+    "parentWidget": false
+  },]
+
+
 
 const Title=()=>(
     <div className="Title">
@@ -2045,12 +1729,15 @@ const burgerKing = {
     cuisines: ["Burger","American"]
 
 };
-const RestrauntCard = ()=>{
-    return (<div className="Restraunt">
-        <img src= {burgerKing.image} alt="Restraunt Image" />
-        <h3>{burgerKing.name}</h3>
-        <h6>{burgerKing.rating}</h6>
-        <h6>{burgerKing.cuisines.join(", ")}</h6>
+const RestaurantCard = ({restaurant})=>{
+    const {name, deliveryTime, cloudinaryImageId,costForTwoString, cuisines} = restaurant.data.data;
+    
+    return (<div className="Restaurant">
+        <img src= {"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/" + cloudinaryImageId} />
+        <h3>{name}</h3>
+        <h6>{deliveryTime} minutes</h6>
+        <h6>{costForTwoString}</h6>
+        <h6>{cuisines.join(", ")}</h6>
 
     </div>
 
@@ -2075,13 +1762,17 @@ const Header = () => {
 };
 
 const Body =() =>{
-    return(<div className="card">
-        <RestrauntCard/>
-        <RestrauntCard/>
-        <RestrauntCard/>
-        <RestrauntCard/>
-        <RestrauntCard/>
-        <RestrauntCard/>
+    return(<div className="Body">
+        <RestaurantCard restaurant = {restaurantList[0]}/>
+        <RestaurantCard restaurant = {restaurantList[1]}/>
+        <RestaurantCard restaurant = {restaurantList[2]}/>
+        <RestaurantCard restaurant = {restaurantList[3] }/>
+        <RestaurantCard restaurant = {restaurantList[4] }/>
+        <RestaurantCard restaurant = {restaurantList[5] }/>
+        <RestaurantCard restaurant = {restaurantList[6] }/>
+        <RestaurantCard restaurant = {restaurantList[7] }/>
+        <RestaurantCard restaurant = {restaurantList[8] }/>
+        <RestaurantCard restaurant = {restaurantList[9] }/>
         
     </div>
     );
