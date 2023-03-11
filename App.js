@@ -1763,19 +1763,19 @@ const Header = () => {
 
 const Body =() =>{
     return(<div className="Body">
-        <RestaurantCard {...restaurantList[0].data.data}/>
-        <RestaurantCard {...restaurantList[1].data.data}/>
-        <RestaurantCard {...restaurantList[2].data.data}/>
-        <RestaurantCard {...restaurantList[3].data.data}/>
-        <RestaurantCard {...restaurantList[4].data.data}/>
-        <RestaurantCard {...restaurantList[5].data.data}/>
-        <RestaurantCard {...restaurantList[6].data.data}/>
-        <RestaurantCard {...restaurantList[7].data.data}/>
-        <RestaurantCard {...restaurantList[8].data.data}/>
-        <RestaurantCard {...restaurantList[9].data.data}/>
+        {
+            restaurantList.map((restaurant) => {
+                return(<RestaurantCard {...restaurant.data.data}/>)
+            })
+            
+        }
+        {/* or
+        restaurantList.map((restaurant) => <RestaurantCard {...restaurant.data.data}/>)*/}
+
+            
         
         
-    </div>
+        </div>
     );
 };
 
