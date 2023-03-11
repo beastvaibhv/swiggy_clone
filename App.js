@@ -1765,7 +1765,7 @@ const Body =() =>{
     return(<div className="Body">
         {
             restaurantList.map((restaurant) => {
-                return(<RestaurantCard {...restaurant.data.data}/>)
+                return(<RestaurantCard {...restaurant.data.data} key = {restaurant.data.data.id}/>)
             })
             
         }
