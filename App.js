@@ -1729,8 +1729,8 @@ const burgerKing = {
     cuisines: ["Burger","American"]
 
 };
-const RestaurantCard = ({name, deliveryTime, cloudinaryImageId,costForTwoString, cuisines})=>{
-    
+const RestaurantCard = (props)=>{
+    const {name, deliveryTime, costForTwoString, cloudinaryImageId, cuisines} = props.restaurantData;
     
     return (<div className="Restaurant">
         <img src= {"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/" + cloudinaryImageId} />
@@ -1765,7 +1765,7 @@ const Body =() =>{
     return(<div className="Body">
         {
             restaurantList.map((restaurant) => {
-                return(<RestaurantCard {...restaurant.data.data} key = {restaurant.data.data.id}/>)
+                return(<RestaurantCard restaurantData ={restaurant.data.data} key = {restaurant.data.data.id}/>)
             })
             
         }
