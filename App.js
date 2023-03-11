@@ -1729,8 +1729,8 @@ const burgerKing = {
     cuisines: ["Burger","American"]
 
 };
-const RestaurantCard = ({restaurant})=>{
-    const {name, deliveryTime, cloudinaryImageId,costForTwoString, cuisines} = restaurant.data.data;
+const RestaurantCard = ({name, deliveryTime, cloudinaryImageId,costForTwoString, cuisines})=>{
+    
     
     return (<div className="Restaurant">
         <img src= {"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/" + cloudinaryImageId} />
@@ -1763,16 +1763,17 @@ const Header = () => {
 
 const Body =() =>{
     return(<div className="Body">
-        <RestaurantCard restaurant = {restaurantList[0]}/>
-        <RestaurantCard restaurant = {restaurantList[1]}/>
-        <RestaurantCard restaurant = {restaurantList[2]}/>
-        <RestaurantCard restaurant = {restaurantList[3] }/>
-        <RestaurantCard restaurant = {restaurantList[4] }/>
-        <RestaurantCard restaurant = {restaurantList[5] }/>
-        <RestaurantCard restaurant = {restaurantList[6] }/>
-        <RestaurantCard restaurant = {restaurantList[7] }/>
-        <RestaurantCard restaurant = {restaurantList[8] }/>
-        <RestaurantCard restaurant = {restaurantList[9] }/>
+        <RestaurantCard {...restaurantList[0].data.data}/>
+        <RestaurantCard {...restaurantList[1].data.data}/>
+        <RestaurantCard {...restaurantList[2].data.data}/>
+        <RestaurantCard {...restaurantList[3].data.data}/>
+        <RestaurantCard {...restaurantList[4].data.data}/>
+        <RestaurantCard {...restaurantList[5].data.data}/>
+        <RestaurantCard {...restaurantList[6].data.data}/>
+        <RestaurantCard {...restaurantList[7].data.data}/>
+        <RestaurantCard {...restaurantList[8].data.data}/>
+        <RestaurantCard {...restaurantList[9].data.data}/>
+        
         
     </div>
     );
