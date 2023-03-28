@@ -1,15 +1,15 @@
 .Title{
     display: flex;
 }
-.Restraunt{
-    width: 300px;
+.Restaurant{
+    width: 200px;
     border: 1px solid black;
     padding: 10px;
     margin: 10px;
     
 
 }
-.Restraunt >img{
+.Restaurant >img{
     width: 100%;
     border: 1px solid blue;
 }
@@ -36,15 +36,17 @@
     padding: 10px;
     list-style-type: none;
 }
-.card{
+.restaurant-list{
     display: flex;
     flex-wrap: wrap;
-    
+    justify-content: space-around;
     padding: 10px;
     margin: 10px;
 }
 .footer{
-    display: flex;
+    width: 100%;
+    background-color: bisque;
+    
     
 }
 .footerlist{
@@ -53,4 +55,33 @@
 .footerlist > li{
     padding: 10px;
     list-style-type: none;
+}
+
+.ShimmerRestaurant >img{
+    width: 100%;
+    border: 1px solid rgb(211, 211, 211);
+    animation: shine 10ms initial;
+    
+}
+.ShimmerRestaurant >div{
+background-color: rgb(211,211,211);
+width: 70%;
+}
+.ShimmerRestaurant{
+    width: 200px;
+    height:300px;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+    animation: shine 1s initial;
+
+}
+.search-container{
+    padding: 10px;
+    justify-content: center;
+    border: 20px;
+}
+.search-container > button{
+    margin: 10px;
+
 }
