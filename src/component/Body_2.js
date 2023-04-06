@@ -4,49 +4,42 @@ import Shimmer from "./Shimmer";
 import {Link} from "react-router-dom"
 import { filterData } from "../utils/helper";
 import { FETCH_RESTAURANT_URL } from "../Config";
-import useOnline from "../utils/useOnline";
+import useAllRestaurants from "../utils/useAllRestaurants";
 
 const Body =() =>{
     const [searchText, setSearchText] = useState("");
     const [allRestaurants,setAllRestaurants] = useState([]);
     const [filterRestaurants, setFilterRestaurants] = useState([]);
-    const isOnline = useOnline();
-   
-   
-    useEffect(()=>{
-        getRestaurant();
-    },[])
-
-    async function getRestaurant() {
-        const data = await fetch(FETCH_RESTAURANT_URL);
-        const json =  await data.json();
-        setFilterRestaurants(json?.data?.cards)
-        setAllRestaurants(json?.data?.cards)
-    }
     
+    const restaurants = useAllRestaurants(FETCH_RESTAURANT_URL);
+    
+    useEffect(()=>{
+       updateState() 
+    },[]);
+
+    async function updateState() { 
+        
+        setFilterRestaurants(restaurants)
+        setAllRestaurants(restaurants)
+    };
 //early return:
 // if(!allRestaurants) return null;
-
-  
-  
-  if(!isOnline){ 
-     return(<h1> Ooops seems like you are not connected to internet </h1>);
-  }
+   
     return allRestaurants?.length === 0 ?(<Shimmer/>):
-
+   
     ( <>
-
-
+    
+        
 
         <div className="search-container">
             <input
               type="text"
               className ="input-search" 
               placeholder="search restaurant, food items" 
-
+              
               value = {searchText} 
               onChange={(e)=>{setSearchText(e.target.value) }} />
-
+            
             <button className="search-button" onClick={()=>
              {
                 const data = filterData(allRestaurants, searchText);
@@ -58,20 +51,18 @@ const Body =() =>{
         { (filterRestaurants?.length === 0) ?"No Search Result":
             filterRestaurants.map((restaurant) => {
                 return(
-            
-                    <Link to={"/restaurant/" +restaurant?.data?.data?.id} key = {restaurant?.data?.data?.id}>
-                    <Restaurant restaurantData ={restaurant?.data?.data} />
-                    </Link>
-                    )
+                <Link to={"/restaurant/" +restaurant?.data?.data?.id} key = {restaurant?.data?.data?.id}>
+                <Restaurant restaurantData ={restaurant?.data?.data} />
+                </Link>
+                )
             })
-
-
+            
         }
         {/* or
         restaurantList.map((restaurant) => <RestaurantCard {...restaurant.data.data}/>)*/}
 
-
-
+            
+        
 
         </div>
         </>

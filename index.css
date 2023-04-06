@@ -85,3 +85,8 @@ width: 70%;
     margin: 10px;
 
 }
+.restaurant-menu >  img{
+    width: 300px;
+    border: grey;
+    margin: 10px;
+}

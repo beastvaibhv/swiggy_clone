@@ -1,4 +1,4 @@
-import { IMG_CDN_URL } from "./Config";
+import { IMG_CDN_URL } from "../Config";
 
 const RestaurantCard = (props)=>{
     const {name, deliveryTime, costForTwoString, cloudinaryImageId, cuisines} = props.restaurantData;
@@ -8,7 +8,7 @@ const RestaurantCard = (props)=>{
         <h3>{name}</h3>
         <h6>{deliveryTime} minutes</h6>
         <h6>{costForTwoString}</h6>
-        <h6>{cuisines.join(", ")}</h6>
+        <h6>{cuisines?.join(", ")}</h6>
 
     </div>
 
