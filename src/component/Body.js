@@ -34,27 +34,30 @@ const Body =() =>{
   }
     return allRestaurants?.length === 0 ?(<Shimmer/>):
 
-    ( <>
+    ( <div>
 
 
 
-        <div className="search-container">
+        <div className="flex flex-wrap justify-center items-center">
+            <div className="border rounded-lg overflow-hidden flex p-1 m-1">
             <input
               type="text"
-              className ="input-search" 
-              placeholder="search restaurant, food items" 
+              className ="px-2 py-0.5 " 
+              placeholder="Search..." 
 
               value = {searchText} 
               onChange={(e)=>{setSearchText(e.target.value) }} />
 
-            <button className="search-button" onClick={()=>
+            <button className="rounded-lg px-0.5 py-0.5 bg-purple-900 text-gray-100 text-xs hover:bg-gray-700 duration-300" onClick={()=>
              {
                 const data = filterData(allRestaurants, searchText);
              setFilterRestaurants(data);}
              }
              >Search</button>
         </div>
-        <div className="restaurant-list">
+        </div>
+
+        <div className="flex flex-wrap justify-center items-baseline">
         { (filterRestaurants?.length === 0) ?"No Search Result":
             filterRestaurants.map((restaurant) => {
                 return(
@@ -69,12 +72,8 @@ const Body =() =>{
         }
         {/* or
         restaurantList.map((restaurant) => <RestaurantCard {...restaurant.data.data}/>)*/}
-
-
-
-
+       </div>
         </div>
-        </>
     );
 };
 export default Body;

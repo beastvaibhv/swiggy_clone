@@ -1,8 +1,8 @@
 
 const ShimmerRestaurantCard = ()=>{
     
-    return (<div className="ShimmerRestaurant">
-        <img  src="https://htmlcolorcodes.com/assets/images/colors/light-gray-color-solid-background-1920x1080.png" alt="" />
+    return (<div className="w-52 h-64 p-1 m-4 bg-gray-100">
+        <img className="w-52 h-32"  src="https://htmlcolorcodes.com/assets/images/colors/light-gray-color-solid-background-1920x1080.png" alt="" />
         <div>
             <h1>              </h1>
         </div>
@@ -18,14 +18,26 @@ const ShimmerBody =() =>{
     return(
         
             <>
-             <div className="search-container">
+            <div className="flex flex-wrap justify-center items-center">
+            <div className="border rounded overflow-hidden flex p-1 m-1">
+            <input
+              type="text"
+              className ="px-5 py-0.5" 
+              placeholder="Search..." 
+            />
 
-            <input type="text" className ="input-search"  placeholder=""/>
-            <button className="search-button">Search</button>
-            </div>
+            <button className="rounded-lg px-2 py-0.5 bg-purple-900 text-gray-100 text-xs hover:bg-gray-700 duration-300" 
+             >Search</button>
+        </div>
+        </div>
+            <div className="flex flex-wrap justify-center items-baseline">
 
-            <div className="restaurant-list">
-
+            <ShimmerRestaurantCard/>
+            <ShimmerRestaurantCard/>
+            <ShimmerRestaurantCard/>
+            <ShimmerRestaurantCard/>
+            <ShimmerRestaurantCard/>
+            <ShimmerRestaurantCard/>
             <ShimmerRestaurantCard/>
             <ShimmerRestaurantCard/>
             <ShimmerRestaurantCard/>

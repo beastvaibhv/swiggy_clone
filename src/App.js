@@ -1,7 +1,7 @@
 import React, {Suspense, lazy} from "react";
 import ReactDOM from "react-dom/client";
 import Header from "./component/Header";
-import Body from "./component/body";
+import Body from "./component/Body";
 import Footer from "./component/Footer";
 import Error from "./component/Error";
 import About from "./component/About";
