@@ -6,7 +6,7 @@ import { filterData } from "../utils/helper";
 import { FETCH_RESTAURANT_URL } from "../Config";
 import useOnline from "../utils/useOnline";
 
-const Body =() =>{
+const Body =(props) =>{
     const [searchText, setSearchText] = useState("");
     const [allRestaurants,setAllRestaurants] = useState([]);
     const [filterRestaurants, setFilterRestaurants] = useState([]);
@@ -63,7 +63,7 @@ const Body =() =>{
                 return(
             
                     <Link to={"/restaurant/" +restaurant?.data?.data?.id} key = {restaurant?.data?.data?.id}>
-                    <Restaurant restaurantData ={restaurant?.data?.data} />
+                    <Restaurant restaurantData ={restaurant?.data?.data} user={props.user}/>
                     </Link>
                     )
             })

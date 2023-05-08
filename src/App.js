@@ -21,6 +21,7 @@ import Shimmer from "./component/Shimmer";
 const Instamart = lazy(()=> import("./component/Instamart"));
 
 const AppLayout = () => {
+ 
   return (
     <>
       
@@ -51,7 +52,10 @@ const appRouter = createBrowserRouter([
     },
     {
     path:"/",
-    element: <Body/>,
+    element: <Body user= {{
+      email : "user@example.com",
+      name: "user",
+    }} />,
     },
     {
     path: "/legal",

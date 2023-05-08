@@ -5,6 +5,13 @@ class Profile extends React.Component {
         super(props);
         this.state = {};
       }
+      componentDidMount(){
+        {/**make api calls here */}
+      }
+      componentWillUnmount(){
+    {/**
+        unmount the component  */}
+      }
     render(){
         return(
             <div>
